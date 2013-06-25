@@ -1,0 +1,130 @@
+/**
+#800080
+#669 index h1, h1,h2,h3,h4,h5,h6
+#306 links
+#339 h2 color and border on index
+**/
+/** ie @font-face **/
+@font-face{font-family:"SegoeUINormal", Calibri, Arial, sans-serif;
+  src:url('a/segoe-ui/segoe-ui/segoe-ui-webfont.eot');
+}
+@font-face{font-family:"SegoeUINormal", Calibri, Arial, sans-serif;
+  src:url(//:) format('no404'), url('a/segoe-ui/segoe-ui/segoe-ui-webfont.woff') format('woff'), url('a/segoe-ui/segoe-ui/segoe-ui-webfont.ttf') format('truetype'), url('a/segoe-ui/segoe-ui/segoe-ui-webfont.svgz#SegoeUINormal') format('svg'), url('a/segoe-ui/segoe-ui/segoe-ui-webfont.svg#SegoeUINormal') format('svg');
+font-weight: normal; font-style: normal}
+
+*{margin:0; padding:0; border:none}
+html{overflow-y:scroll}
+html,body{height:100%}
+body{font-family:"SegoeUINormal", Calibri, Arial, sans-serif; font-weight:200; font-size:110%; -webkit-font-smoothing:antialiased} 
+body:before{content:""; position:fixed; top:-15px; left:0; width:100%; height:15px; z-index:100; -webkit-box-shadow:0px 0px 10px rgba(0,0,0,.9); -moz-box-shadow:0px 0px 10px rgba(0,0,0,.9); box-shadow:0px 0px 10px rgba(0,0,0,.9)}
+
+
+.content{width:90%; margin-left:auto; margin-right:auto; position:relative}
+.banner{width:100%; height:75px; border-bottom:2px solid #000080}
+.footer{border-top:2px solid #000080}
+footer{padding-bottom:2em}
+h4.footercopy{color:#669; padding-top:2em; border-bottom:2px solid #669}
+.main{margin-top:2em; clear:right; float:none}
+.main-index.main{margin-top:5em}
+article{width:90%; margin-right:auto; margin-left:auto}
+section{padding-bottom:5em}
+
+
+ul,li{list-style-type:none}
+a,a:link{color:#306}
+
+.toc{}
+.toc li{}
+.toc a{}
+
+p{text-align:left; padding:.6em .95em; font-size:1.45em; margin:.3em .45em}
+.no-margin-bottom{margin-bottom:0}
+
+h1,h2,h3,h4,h5,h6{font-family:"SegoeUINormal", Calibri, Arial, sans-serif; color:#669}
+h2.h2index{color:#339; border-top:2px solid #339}
+h1{margin-bottom:1.4em; font-size:1.5em}
+h2{margin-bottom:1.15em; margin-top:1.15em; padding-left:1em}
+h3{font-size:1.35em; margin-bottom:1.0em; margin-top:1em; padding-left:1.2em}
+h4{margin-bottom:.9em}
+
+.headerbanner{background-color:#000; height:50px}
+.headerbannerlogo{float:right; margin-right:1em}
+
+h2 a,h3 a{text-decoration:none; display:block}
+.headernext{padding-top:0.25em; border-top:8px solid #000080; text-align:right}
+.next{padding-top:2em; display:block; text-align:right; margin-right:1em; padding-bottom:1em}
+.header-toc{border-bottom:2px solid #000080; margin-bottom:.25em}
+.header-bbottom{border-bottom:2px solid #000080}
+.indexh{font-size:2.25em; font-family:Myriad Pro, sans-serif; font-weight:300; text-align:left}
+
+
+.logo{display:block; width:100%; position:relative}
+.logo img{position:absolute; right:1em; top:1em}
+a:hover{text-decoration:underline}
+.mslogo{display:block; margin-top:1em; margin-bottom:1em; margin-left:80%}
+
+
+.header-lead{border-bottom:2px solid #000080; color:#000080}
+
+a{color:#000080}
+figure{text-align:center; margin-top:.25em; margin-bottom:.5em}
+figure img{display:block; margin-left:auto; margin-right:auto}
+.figimgmult{margin-bottom:.25em}
+figcaption{text-align:center; font-size:1.75em; font-style:italic; letter-spacing:-1px; padding-top:.5em; padding-bottom:.2em}
+
+
+
+.clearright{clear:right; float:none}
+
+.indexh time{display:block; font-size:.5em}
+
+.notebox{margin:.25em auto; border:1px solid #000}
+.notebox p{padding:.2em .5em; font-style:italic; font-size:1.15em; margin:.1em .2em}
+
+
+.contrast{color:#333}
+.times-new-roman{font-family:Times New Roman, sans-serif}
+
+abbr{text-transform:uppercase}
+
+ul{}
+.toc{}
+.toc,.toc-sub{font-weight:700}
+.toc li{}
+.toc a{display:block; text-indent:1em; color:#000; font-size:1.5em}
+.toc-sub{}
+.toc-sub-sub{font-weight:300}
+.toc-sub a{text-indent:2.5em}
+.toc-sub-sub a{text-indent:4em}
+
+.ulist{margin:.2em .45em}
+.ulist li{margin-top:.3em; margin-bottom:.3em; padding-left:1em; font-size:1.45em}
+ul.ulist li{list-style-type:disc; list-style-position:inside}
+.sub-ulist{}
+.sub-sub-ulist{}
+.sub-ulist li{padding-left:2em; font-size:1em; list-style-type:circle}
+.sub-sub-ulist li{padding-left:2.5em; list-style-type:square}
+.disc li{color:#333; line-height:18.0pt; background:#fff}
+.circle li{}
+
+
+table{border-collapse:collapse; border-spacing:0; padding-top:0.5em; padding-bottom:0.5em; margin:0.8em auto; -moz-box-shadow:0 0 4px #000; -ms-box-shadow:0 0 4px #000; -o-box-shadow:0 0 4px #000; -webkit-box-shadow:0 0 4px #000; box-shadow:0 0 4px #000; color:#000; width:80%}
+tbody{}
+tfoot{}
+th{font-weight:700; text-align:center; vertical-align:top; font-size:20px; padding-top:0.5em; padding-bottom:0.5em}
+td,caption{font-weight:normal; vertical-align:top}
+caption{text-align:center; font-style:normal; font-weight:normal; font-size:1.45em; padding-bottom:.8em}
+tr{border-bottom:1px solid #ccc}
+td{padding:.3em; font-size:1.3em; text-align:left}
+td img{vertical-align:top}
+.h1bannerindex{background-color:#000}
+
+.contrastingpoint{display:block; margin-top:4em; font-size:32px; font-family:Georgia, serif}
+
+.inline{display:inline}
+.qabox{border:1px solid #000; margin:5px auto; width:90%; padding:5px}
+
+
+
+
+
