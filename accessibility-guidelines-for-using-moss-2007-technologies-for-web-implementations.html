@@ -1,4 +1,22 @@
-<h1>Accessibility Guidelines for using MOSS 2007 technologies for Web implementations</a></h1><p>Microsoft Office SharePoint Server (MOSS) 2007 provides portal and search features that represent the next generation of SharePoint Portal Server (SPS) 2003 (see previous chapter Accessibility guidelines for using SharePoint 2003 technologies for Web implementations).</p>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessibility Guidelines for Using MOSS 2007 Technologies for Web Implementations &#45; Guidelines for Designing and Developing Accessible Web Sites by Using Microsoft Solutions</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <link type="text/css" rel="stylesheet" href="a/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header role="banner"><h1 class="headerbanner"><img class="headerbannerlogo" src="a/i/ms-logo-216x74.gif" height="50" alt="Microsoft" /></h1></header>
+      <div class="main" role="main">
+        <article role="article">
+          <section role="region">
+            <h1>Accessibility Guidelines for Using MOSS 2007 Technologies for Web Implementations</h1>
+
+
+
+<p>Microsoft Office SharePoint Server (MOSS) 2007 provides portal and search features that represent the next generation of SharePoint Portal Server (SPS) 2003 (see previous chapter Accessibility guidelines for using SharePoint 2003 technologies for Web implementations).</p>
 <p>However, extra dimensions have been given to MOSS 2007 in Web content management (WCM), document and records management, business process integration and forms, and business intelligence.</p>
 <p>As a result, MOSS 2007 constitutes an integrated suite of server capabilities that can help improve organizational effectiveness by providing comprehensive content management and enterprise search, accelerating shared business processes, and facilitating information-sharing across boundaries for better business insight. Office SharePoint Server 2007 supports all intranet, extranet, and Web applications across an enterprise within one integrated platform, instead of relying on separate fragmented systems.</p>
 <p>Microsoft Office Forms Server 2007, a subset of MOSS 2007, offers a solution that aims at facilitating the form templates publishing and management from a central local.</p>
@@ -16,33 +34,14 @@ Office System 2007 Beta 2 Shared Features VPAT</a>
 .</p><h3>A More accessible Mode</a><p>On an MOSS 2007 technologies-based site, most user interface (UI) elements, such as links, form controls, and buttons, are designed to use <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9b14f6e1-888a-4f1d-b1a1-da08ee4077df" title="Microsoft Active Accessibility (MSAA)">Microsoft Active Accessibility (MSAA)</a>. MSAA enables people with disabilities to interact with content by using assistive technologies (see eponym section 1.2.2 Assistive technologies) such as screen readers, which are devices that provide a synthesized speech or Braille description of what a blind or low-vision user is unable to see on a computer screen or Web site. Proper MSAA names are given on all editable controls, links, and buttons.</p>Because some custom UI elements do not use MSAA properties, the More Accessible mode enable to render custom controls as an equivalent standard HTML controls so that they will be better recognized by AT devices. &quot;More accessible mode&quot; is exposed via the Document Object Model (DOM) so that third parties can create solutions catered to screen reader users.</p>alt="Turn on more accessible mode"
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image020.png"src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image021.gif"
 align=left hspace=12 alt="Turn on more accessible mode"
-More
-Accessible Mode does not enable alternate versions of every UI element. For
-example, if a custom control has been added to a MOSS 2007 technologies-based
-site, enabling More Accessible Mode does not automatically create an alternate
-version of that control.</p>The More Accessible Mode can be turned on or
-off by pressing the TAB key immediately after placing focus on the page in a
-browser. Press the TAB key until you reach the font-style:
-normal'>Turn on more accessible mode or Turn
-off more accessible mode link.</p>Even though the link to turn on More
-Accessible Mode is the first element in the tab orderwhich means that it is
-the first option when interacting with on the pageyou may need to press the
-TAB key more than once to activate the feature. This is because the browser
-menus or toolbars may initially have the active focus. More Accessible Mode
-changes the way that the page renders for you, not for other users of the site.
-Because this is a local setting, no one besides you knows that you enabled this
-setting. More Accessible Mode remains enabled until you turn it off or close
-your browser. More Accessible Mode enables the following items to be rendered
-in a way that optimizes them to work better with AT devices such as screen
-readers:</p>
+More Accessible Mode does not enable alternate versions of every UI element. For example, if a custom control has been added to a MOSS 2007 technologies-based site, enabling More Accessible Mode does not automatically create an alternate version of that control.</p>
+
+The More Accessible Mode can be turned on or off by pressing the TAB key immediately after placing focus on the page in a browser. Press the TAB key until you reach the font-style: Turn on more accessible mode or Turn off more accessible mode link.</p>
+
+Even though the link to turn on More Accessible Mode is the first element in the tab orderwhich means that it is the first option when interacting with on the pageyou may need to press the TAB key more than once to activate the feature. This is because the browser menus or toolbars may initially have the active focus. More Accessible Mode changes the way that the page renders for you, not for other users of the site. Because this is a local setting, no one besides you knows that you enabled this setting. More Accessible Mode remains enabled until you turn it off or close your browser. More Accessible Mode enables the following items to be rendered in a way that optimizes them to work better with AT devices such as screen readers:</p>
 
 Menus
-- Instead of displaying a drop-down menu of options for files in a document
-library, a new browser window is opened that contains all of the menu items as
-hyperlinks. This format is easier for AT devices to interpret. At the same
-time, the user is informed that a new window will open if he clicks on the menu
-link; the TITLE attribute contains the Open menu terminology (see point 13.3 in
-section 
+- Instead of displaying a drop-down menu of options for files in a document library, a new browser window is opened that contains all of the menu items as hyperlinks. This format is easier for AT devices to interpret. At the same time, the user is informed that a new window will open if he clicks on the menu link; the TITLE attribute contains the Open menu terminology (see point 13.3 in section 
 
 _Ref153610813 \r \h
 5.1.14
@@ -366,7 +365,7 @@ Information layout
 
  )
 and Web pages that satisfy this criterion.The LONGDESC attribute can be added by using Microsoft Office SharePoint Designer 2007 to edit the page. The best approach is to create a site definition that integrates this criterion.</p>
-The WCAG directive specifies that the LONGDESC attribute should be used, but currently most browsers do not support it. Internet Explorer 6.0 exposes this attribute from a programming point of view in its model object. Therefore, assistive technologies can make use of it. <a href="http://www.hackcraft.net/longdesclink/default.asp" title="Longdesc Linker for Internet Explorer 6">normal'>Longdesc Linker for Internet Explorer 6</a>
+The WCAG directive specifies that the LONGDESC attribute should be used, but currently most browsers do not support it. Internet Explorer 6.0 exposes this attribute from a programming point of view in its model object. Therefore, assistive technologies can make use of it. <a href="http://www.hackcraft.net/longdesclink/default.asp" title="Longdesc Linker for Internet Explorer 6">Longdesc Linker for Internet Explorer 6</a>
  is a free downloadable ActiveX component that makes it possible to add a Long Description element to the context menu used by Internet Explorer for images. This element is enabled if the selected image has a LONGDESC link. If the user selects the link (by holding down the SHIFT key while selecting), Internet Explorer follows it.</p>
 1.8:
 If a detailed description is provided for an image, is the content relevant?</p>
@@ -1438,7 +1437,7 @@ _Ref153013112 \r \h \* MERGEFORMAT 2.2
  \* MERGEFORMAT
 Coding
 checklist for accessible Web content
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003100350033003000310033003100310032000000</w:data>
+
 
 should be observed.</p><h2 text-align:mso-list:l18 level2 lfo5'>
 <a name="_Toc155936370">
@@ -1449,14 +1448,23 @@ follow the overall approach and related methods developed under section
 
 _Ref153017815 \r \h
 2.3
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003100350033003000310037003800310035000000</w:data>
+
 
 &quot;
   _Ref153017815 \hmso-element:
-field-separator'><![endif]-->
+field-separator'>
 Assessment
 and validation of accessible Web Content
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003100350033003000310037003800310035000000</w:data>
+
 
 &quot;.</p><p>As indicated, such a validation should begin very early in the project, right from the design phase.</p>
-
+          </section>
+        </article>
+      </div>
+      <footer>
+        <h3 class="headernext"><a href="conclusion.html">Conclusion ➯</a></h3>
+        <h4 class="footercopy">Guidelines for Designing and Developing Accessible Web Sites by Using Microsoft Solutions</h4>
+      </footer>
+    </div>
+  </body>
+</html>
