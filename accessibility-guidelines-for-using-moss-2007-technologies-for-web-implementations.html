@@ -12,11 +12,7 @@
       <div class="main" role="main">
         <article role="article">
           <section role="region">
-            <h1>Accessibility Guidelines for Using MOSS 2007 Technologies for Web Implementations</h1>
-
-
-
-<p>Microsoft Office SharePoint Server (MOSS) 2007 provides portal and search features that represent the next generation of SharePoint Portal Server (SPS) 2003 (see previous chapter Accessibility guidelines for using SharePoint 2003 technologies for Web implementations).</p>
+            <h1>Accessibility Guidelines for Using MOSS 2007 Technologies for Web Implementations</h1><p>Microsoft Office SharePoint Server (MOSS) 2007 provides portal and search features that represent the next generation of SharePoint Portal Server (SPS) 2003 (see previous chapter Accessibility guidelines for using SharePoint 2003 technologies for Web implementations).</p>
 <p>However, extra dimensions have been given to MOSS 2007 in Web content management (WCM), document and records management, business process integration and forms, and business intelligence.</p>
 <p>As a result, MOSS 2007 constitutes an integrated suite of server capabilities that can help improve organizational effectiveness by providing comprehensive content management and enterprise search, accelerating shared business processes, and facilitating information-sharing across boundaries for better business insight. Office SharePoint Server 2007 supports all intranet, extranet, and Web applications across an enterprise within one integrated platform, instead of relying on separate fragmented systems.</p>
 <p>Microsoft Office Forms Server 2007, a subset of MOSS 2007, offers a solution that aims at facilitating the form templates publishing and management from a central local.</p>
@@ -35,27 +31,13 @@ Office System 2007 Beta 2 Shared Features VPAT</a>
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image020.png"src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image021.gif"
 align=left hspace=12 alt="Turn on more accessible mode"
 More Accessible Mode does not enable alternate versions of every UI element. For example, if a custom control has been added to a MOSS 2007 technologies-based site, enabling More Accessible Mode does not automatically create an alternate version of that control.</p>
-
 The More Accessible Mode can be turned on or off by pressing the TAB key immediately after placing focus on the page in a browser. Press the TAB key until you reach the font-style: Turn on more accessible mode or Turn off more accessible mode link.</p>
-
 Even though the link to turn on More Accessible Mode is the first element in the tab orderwhich means that it is the first option when interacting with on the pageyou may need to press the TAB key more than once to activate the feature. This is because the browser menus or toolbars may initially have the active focus. More Accessible Mode changes the way that the page renders for you, not for other users of the site. Because this is a local setting, no one besides you knows that you enabled this setting. More Accessible Mode remains enabled until you turn it off or close your browser. More Accessible Mode enables the following items to be rendered in a way that optimizes them to work better with AT devices such as screen readers:</p>
-
 Menus
 - Instead of displaying a drop-down menu of options for files in a document library, a new browser window is opened that contains all of the menu items as hyperlinks. This format is easier for AT devices to interpret. At the same time, the user is informed that a new window will open if he clicks on the menu link; the TITLE attribute contains the Open menu terminology (see point 13.3 in section 
-
-_Ref153610813 \r \h
 5.1.14
-
-
-
-
-_Ref153610813 \h
-Accessible
-content
-
-
+Accessible content
 ).</p>
-
 Optimized fields - Some fields are difficult for accessibility tools to interpret. When More Accessible Mode is enabled, these fields are replaced with fields that are optimized for accessibility tools. For example, some WSS 3.0 and MOSS 2007 lists support enhanced text fields that enable users to add formatted text, images, tables, and hyperlinks. Because of the way these fields are rendered in a browser, some accessibility tools cannot read them. When More Accessible Mode is enabled, such fields are replaced with standard plain text fields that are compliant with accessibility tools.</p>
 <a href="http://www.microsoft.com/windowsvista/features/foreveryone/speech.mspx" title="Windows Speech Recognition">Windows Speech Recognition</a>is a speech based assistive technology that is available in Windows Vista. Windows Speech Recognition enables users to perform actions by speaking (in English) instead of using a keyboard or mouse.</p>
 There are known issues related to the use of Windows Speech Recognition with some menus on a WSS 3.0/MOSS 2007 page, including the menus for New, Upload, Welcome User and the drop-down menu of options that are available for files in a document library.</p>To access these menus by using Windows Speech Recognition, you need to activate More Accessible Mode by doing the following:</p> 
@@ -68,7 +50,6 @@ To use a split button menu such as the New or Upload button on a list toolbar, o
 A new browser window that contains links from the menu will open.</p>
 For menus that have more than one command, say, &quot;Press ALT DOWN ARROW&quot;.</p>In addition to enhanced text fields, several other types of fields are replaced with alternate fields in More Accessible
 Mode:</p>
-
 <table>
 <caption></caption>
 <thead><tr><th>Field in standard mode</th><th>Alternate field in More Accessible Mode</th></tr></thead>
@@ -77,871 +58,433 @@ Mode:</p>
 <td>Enhanced
 text field</td><td>Multiple
 line text field </p>
-</td>
+</td> </tr>
+Graphical summary charts (for surveys)</td><td>Table with table headers (see point 5.3 in section Contact Selector</td><td>Text Field
 
-
-
- </tr>
-
-
-
-
-
-
-Graphical
-summary charts (for surveys)</td><td>Table with
-table headers (see point 5.3 in section 
-
-
-Contact Selector</td><td>Text Field
-
-
-
-
-
-
-
-
-
-
-
-
-5.1.6
- 
+5.1.6 
 Tables
-
-
-
-
-
-
-
-
-
-
-
-
 )</p>
-</td>
-
-
-
- </tr>
+</td> </tr>
  <tr>
-
-
-
-
-
-Gantt chart
-(in a project list) </p>
+Gantt chart (in a project list) </p>
 </td>
-
-Table with
-table headers (see point 5.3 in section 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5.1.6
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-_Ref153606043 \h \* MERGEFORMAT 
-
-
-
-
-
-
-
+Table with table headers (see point 5.3 in section 5.1.6
 Tables
-
-
-
-
-
-
-
-
-
-
-
-
-). A table
-with table headers also appears below a Gantt chart in standard mode.</p>
+). A table with table headers also appears below a Gantt chart in standard mode.</p>
+</td> </tr>
+Contact selector </p>
 </td>
-
-
-
- </tr>
- <tr mso-yfti-irow:4;mso-yfti-lastrow:yes'>
-
-
-
-
-
-Contact
-selector </p>
-</td>
-
-
-
-
-
-
-
-
 Text field</p>
-</td>
-
-
-
- </tr>
+</td> </tr>
 </table>
-Finally, screen reader friendly Instant Messaging presence status and menu interaction on presence enabled people fields. ALT text that describes the presence status on people fields have been added on the WSS 3.0 and MOSS 2007 sites, and made ENTER the action of opening the menu for these to simplify the keyboard only
-experience.</p>
-<a
-name="_Ref153607986"> 
-5.1.2 Graphics</a>
-1.1:
-Does each graphic have text to display as an alternative to the graphic?</p><em>
+Finally, screen reader friendly Instant Messaging presence status and menu interaction on presence enabled people fields. ALT text that describes the presence status on people fields have been added on the WSS 3.0 and MOSS 2007 sites, and made ENTER the action of opening the menu for these to simplify the keyboard only experience.</p>
+5.1.2 Graphics
+1.1: Does each graphic have text to display as an alternative to the graphic?</p><em>
 In HTML, use the ALT attribute with IMG and AREA SHAPE elements, and so forth. It is important to provide alternate text for graphics because some browsers and screen readers cannot interpret or display graphics properly.</em></p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.1_HTML_01, 1.1_HTML_07, 1.1_HTML_08</p>Type
-of criterion: development</p>Can be accomplished: Yes
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_01, 1.1_HTML_07, 1.1_HTML_08</p>
+Type of criterion: development</p>Can be accomplished: Yes
 Comments: WSS 3.0 and MOSS 2007 sites use by default descriptive ALT text for images that convey meaning or important information to users.</p>
 For specific custom pages, templates (see\ 10.1 in section 
-
 5.1.11
-
-
-
-Information
-layout
+Information layout
 
 ) and Web pages that satisfy this criterion can be created. You can edit the page with Microsoft Office SharePoint Designer 2007 to take advantage of the tight integration between these products and technologies.</p>
-It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>1.2:
-Is the alternate text for each image relevant to the context in which the image is viewed?</p>A
-given image might have several meanings. It is the context of the image that determines the exact meaning. For example, a yellow bullet icon in a newspaper Web site should have the ALT attribute set to ALT=&quot;&quot; or ALT=&quot;*&quot;. However, if the same yellow bullet icon is included in a list of graphics that is available for download, it might make more sense to set the attribute to ALT = &quot;yellow diamond&quot; to distinguish it from other graphics available on the page.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.1_HTML_03</p>Type of criterion: development</p>Can be accomplished: Yes
-Comments:
-See 1.1 in this section. This criterion is subjective.
-</p>1.3:
-Are graphics that are used only for decorative purposes commented with ALT=&quot;&quot;?</p>
+It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
+1.2: Is the alternate text for each image relevant to the context in which the image is viewed?</p>
+A given image might have several meanings. It is the context of the image that determines the exact meaning. For example, a yellow bullet icon in a newspaper Web site should have the ALT attribute set to ALT=&quot;&quot; or ALT=&quot;*&quot;. However, if the same yellow bullet icon is included in a list of graphics that is available for download, it might make more sense to set the attribute to ALT = &quot;yellow diamond&quot; to distinguish it from other graphics available on the page.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_03</p>
+Type of criterion: development</p>
+Can be accomplished: Yes
+Comments: See 1.1 in this section. This criterion is subjective.</p>
+1.3: Are graphics that are used only for decorative purposes commented with ALT=&quot;&quot;?</p>
 Some graphics have no informative value. An example is the use of transparent pixels only for layout purposes. However, all graphical elements must be commented. For this reason, graphics that are used only for decorative or layout purposes should be commented by setting the ALT attribute to null (in HTML, ALT=&quot;&quot;). Some browsers do not display the images that use this type of comment.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.1_HTML_02</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 1.1_HTML_02</p>
 Type of criterion: development</p>
 Can be accomplished: Yes Comments: By default, images that are considered spacer images or have no informational value contained in them have ALT=&quot;&quot;, which tells AT devices
 (see section 
-
-_Ref122419931 \r \h \* MERGEFORMAT 1.2.2
-
-
-
-_Ref122419931 \h \* MERGEFORMAT mso-fareast-language:KO;font-style:normal;
+1.2.2
 Assistive technologies
-
 ) that the images do not convey content or information. See also 1.1 in this section.</p>
-1.4:
-Is the alternate text for each image no more than 60 characters long?</p>
+1.4: Is the alternate text for each image no more than 60 characters long?</p>
 You should use a maximum of 60 characters in the ALT attribute because alternate text might bother some users. This is often the case for people who use a screen magnification function because of visual disabilities. It is important to limit the number of characters in the image comments so that such users can minimize the effort required to obtain all the information.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): -</p>Type
 of criterion: development</p>Can be accomplished: Yes
-Comments:
-See 1.1 in this section.</p>1.5:
+Comments: See 1.1 in this section.</p>1.5:
 Are all comments that are linked to clickable areas of a MAP image relevant?</p>
-Definition:
-a MAP image is an image that presents clickable areas so that the user can click to select an option. When you use a MAP image in HTML (on the client or the server side), it is important to include alternate text for all clickable areas, as well as for the MAP image itself (that is, the image that contains the USEMAP or ISMAP attribute).</p>
+Definition: a MAP image is an image that presents clickable areas so that the user can click to select an option. When you use a MAP image in HTML (on the client or the server side), it is important to include alternate text for all clickable areas, as well as for the MAP image itself (that is, the image that contains the USEMAP or ISMAP attribute).</p>
 For a MAP image on the client side, provide alternate text by using the ALT attribute in each of the clickable areas (AREA SHAPE).</p>
 For a MAP image on the server side, provide redundant text links that repeat the content of each of the clickable areas.</p>
 Comment 1: The alternate text provided for the image that contains the USEMAP or ISMAPattribute must not be null.</p>Comment
 2: It is recommended that MAP images be used on the client side rather than on the server side.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>, <a href="Point%20de%20contrle%201.1%20des%20WCAG%201.0%20http:/www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links" title="Point de contrle 1.2 des WCAG 1.0 ">1.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps" title="Point de contrle 9.1 des WCAG 1.0 ">9.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): 1.1_HTML_03, 1.2_HTML_01, 9.1_HTML_01</p>Type
 of criterion: development</p>Can be accomplished: Yes
-Comments: 
-WSS 3.0 and MOSS 2007 do not contain and cannot generate standard MAP images.</p>
+Comments:  WSS 3.0 and MOSS 2007 do not contain and cannot generate standard MAP images.</p>
 It remains the responsibility of MOSS 2007 developers, when creating templates (see
 10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
+5.1.11 Information layout
 )that use this feature, to ensure that their Web pages satisfy this criterion. The solution is to systematically fill in the ALT attribute that is associated with the tag containing the USEMAP attribute (in addition to the images). Each clickable area (AREA SHAPE attribute) must include an appropriate ALT attribute.</p>
 1.6:
 Is the alternate content for each text image at least the equivalent of the text appearing in the image?</p>
 It is not recommended that you present text in the form of an image. However, if there is an unavoidable graphical constraint (for example, non-equivalent CSS rendering), the alternate text for a graphical element containing text should, at minimum, present the exact content of the text itself. The alternate text can provide additional information, but it must at least provide the exact content.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): 1.1_HTML_03</p>Type
 of criterion: development</p>Can be accomplished: Yes
 Comments:
 See 1.1 in this section. In addition, when an image file is uploaded to a site, alternative ALT text to that image can be added. For example, the Site Image Web Part contains a field in which you can type custom ALT text when you add an image. When you add pictures to a picture library, you can define custom ALT text for the pictures. </p>
-1.7:
-Do all images that require a detailed description provide comment text?</p>
+1.7: Do all images that require a detailed description provide comment text?</p>
 When a graphical element requires a long description in HTML (for example, a complex image or alternate text longer than 60 characters) a text comment must be provided. The comment can be a link to a descriptive file (for example, a D-link or a clickable graphic), a caption that appears directly on the page, or a LONGDESC attribute.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.1_HTML_05</p>Type
-of criterion: development</p>Can be accomplished: Yes<b>
-Comments:
-WSS 3.0 and MOSS 2007 can be used to create templates(see
-10.1 in section 
-
-
-5.1.11
-
-
- 
-
-Information layout
-
-
- )
-and Web pages that satisfy this criterion.The LONGDESC attribute can be added by using Microsoft Office SharePoint Designer 2007 to edit the page. The best approach is to create a site definition that integrates this criterion.</p>
+1.0 Test(s): 1.1_HTML_05</p>Type of criterion: development</p>Can be accomplished: Yes<b>
+Comments: WSS 3.0 and MOSS 2007 can be used to create templates(see 10.1 in section 5.1.11 Information layout) and Web pages that satisfy this criterion.The LONGDESC attribute can be added by using Microsoft Office SharePoint Designer 2007 to edit the page. The best approach is to create a site definition that integrates this criterion.</p>
 The WCAG directive specifies that the LONGDESC attribute should be used, but currently most browsers do not support it. Internet Explorer 6.0 exposes this attribute from a programming point of view in its model object. Therefore, assistive technologies can make use of it. <a href="http://www.hackcraft.net/longdesclink/default.asp" title="Longdesc Linker for Internet Explorer 6">Longdesc Linker for Internet Explorer 6</a>
  is a free downloadable ActiveX component that makes it possible to add a Long Description element to the context menu used by Internet Explorer for images. This element is enabled if the selected image has a LONGDESC link. If the user selects the link (by holding down the SHIFT key while selecting), Internet Explorer follows it.</p>
-1.8:
-If a detailed description is provided for an image, is the content relevant?</p>
+1.8: If a detailed description is provided for an image, is the content relevant?</p>
 The content should provide additional information to the description defined in the ALT attribute for the image.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">
 1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): 1.1_HTML_04</p>Type
 of criterion: development</p>Can be accomplished: Yes
-Comments:
-See 1.7 in this section. This criterion is subjective.</p>1.9:
+Comments: See 1.7 in this section. This criterion is subjective.</p>1.9:
 Does the text used in the ALT attribute for each image provide the function of
 the link?</p>The image description is not always in keeping with the function of the link. For example, if an arrow is used to indicate a link, use ALT=&quot;Next&quot; instead of ALT=&quot;Right Arrow&quot;. Avoid using ALT=&quot;&quot;, which provides no information about the function of the link.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p><p>WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p><p>WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 <p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-<p>UWEM 1.0 Test(s): 13.1_HTML_02</p>Type
-of criterion: development</p>Can be accomplished: Yes
-Comments:
-In terms of Wording of links, WSS 3.0 and MOSS 2007 try
+<p>UWEM 1.0 Test(s): 13.1_HTML_02</p>
+Type of criterion: development</p>Can be accomplished: Yes
+Comments: In terms of Wording of links, WSS 3.0 and MOSS 2007 try
 to use wording that makes more sense when read out of the context, i.e. Add Event rather than Add.</p>
-Generally speaking, templates
-(see 10.1 in
-section 
-
-5.1.11
-
-
-
-Information
-layout
-
-)
+Generally speaking, templates (see 10.1 in section  5.1.11 Information layout)
 and Web pages satisfy this criterion can be created that. The solution is to place an ALT attribute between the &lt;IMG&gt; tags embedded in an &lt;A&gt; tag, making sure that the text is relevant.</p>
 It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
-5.1.3
-Frames2.1:
-Does each frame have a NAME attribute?</p>In HTML, each frame must be named by using the NAME attribute. Browsing through frame-based Web pages can be complex, especially for visually impaired people who become familiar with site content frame by frame (whereas sighted people have an overview of the entire site). Comment: The content of the NAME attribute should not include any spaces.</p>
+5.1.3 Frames
+2.1: Does each frame have a NAME attribute?</p>In HTML, each frame must be named by using the NAME attribute. Browsing through frame-based Web pages can be complex, especially for visually impaired people who become familiar with site content frame by frame (whereas sighted people have an overview of the entire site). Comment: The content of the NAME attribute should not include any spaces.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: development</p>Can be accomplished: N/A (default) / Yes
-Comments:
-WSS 3.0 and MOSS 2007 are not frame-based by default.
-However, it is possible to create templates (see
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): -</p>
+Type of criterion: development</p>Can be accomplished: N/A (default) / Yes
+Comments: WSS 3.0 and MOSS 2007 are not frame-based by default. However, it is possible to create templates (see
 10.1 in section 
-
 5.1.11
-
-
-
-Information
-layout
-
+Information layout
 )and pages that have frames. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>2.2:
 Are the names assigned to frames relevant?</p>
 The names assigned to frames should be relevant. Avoid naming frames with directional data, such as &quot;Left,&quot; &quot;Right,&quot; or &quot;Middle.&quot; It is better to name frames with explicit names that refer to the function provided by the frame, such as &quot;Menu,&quot; &quot;Navigation,&quot; or &quot;Content.&quot;</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: development</p>
-Can
-be accomplished: N/A (default) / Yes
-Comments:
-See 2.1 in this section.</p>2.3:
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>\
+Type of criterion: development</p>
+Can be accomplished: N/A (default) / Yes
+Comments: See 2.1 in this section.</p>2.3:
 Is there a NOFRAME tag?</p>In HTML, the NOFRAME tag is used to provide the user with a summary of the main links on the Web site. This tag facilitates browsing for browsers that do not handle frames.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">
 6.5</a>
 </p>WCAG
 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): 6.5_HTML_02</p>Type
 of criterion: development</p>Can be accomplished: N/A (default) / Yes
-Comments:
-See 2.1 in this section.</p>2.4:
+Comments: See 2.1 in this section.</p>2.4:
 Is the content of the NOFRAME tag relevant?</p>If a NOFRAME tag is present, the information in the tag must be relevant. In many cases, the NOFRAME tag is present but provides information that is either inappropriate or incomplete. This tag is intended to provide the main links existing on the Web site.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">
 6.5</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 6.5_HTML_02</p>Type
-of criterion: development</p>Can be accomplished: N/A (default) / Yes
-Comments:
-See 2.1 in this section.</p>2.5:
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 6.5_HTML_02</p>
+Type of criterion: development</p>Can be accomplished: N/A (default) / Yes
+Comments: See 2.1 in this section.</p>2.5:
 Does each frame have a TITLE attribute?</p>In HTML, the TITLE attribute is used to describe, in a few words, the purpose of the frame. This attribute is complementary to the NAME attribute.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">
 12.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 12.1_HTML_01</p>Type
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+1.0 checkpoint(s) [Priority 3]: -</p>\
+UWEM 1.0 Test(s): 12.1_HTML_01</p>Type
 of criterion: development</p>
 Can be accomplished: N/A (default) / Yes Comments:
 See 2.1 in this section.</p>2.6: Is the content of the TITLE attribute relevant?</p>Some assistive technologies can recognize this attribute. The content of this attribute helps the user navigate from frame to frame independently and quickly determine the function of each frame.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">
-12.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 12.1_HTML_02</p>Type
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 12.1_HTML_02</p>Type
 of criterion: development</p>Can be accomplished: N/A (default) / Yes Comments:
 See 2.1 in this section.</p>2.7:
 Does each page have a maximum of three frames?</p>It is important to have no more than three frames on any one page. If more than three frames are used, the page becomes difficult to read, especially for users of assistive technologies.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">
 13.4</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: development</p>Can be accomplished: N/A (default) / Yes Comments:
+</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): -</p>Type of criterion: development</p>Can be accomplished: N/A (default) / Yes Comments:
 See 2.1 in this section.</p>2.8:
 When frames are used, is scrolling automatic?</p>In HTML, a frame can no longer be scaled if scrolling is set to &quot;NO.&quot; The scrolling function must be enabled. For users of magnification software, which might implement user-specific style sheets with larger fonts, and so forth, in-frame scrolling must be enabled to allow all content to be accessed.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">
-14.3</a>
-</p>UWEM
-1.0 Test(s): -</p>Type
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">14.3</a>
+</p>UWEM 1.0 Test(s): -</p>Type
 of criterion: design / development</p>Can be accomplished: N/A (default) / Yes
-Comments:
-See 2.1 in this section.</p>
-5.1.4
-Colors
-3.1:
-Is information provided by color still readable when colors are disabled?</p>Web site designers must be particularly careful about information provided by colors. This information can be lost to colorblind users or users who do not have adequate visual acuity to distinguish between certain colors.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey" title="Point de contrle 2.1 des WCAG 1.0 ">
+Comments: See 2.1 in this section.</p>
+5.1.4 Colors
+3.1: Is information provided by color still readable when colors are disabled?</p>Web site designers must be particularly careful about information provided by colors. This information can be lost to colorblind users or users who do not have adequate visual acuity to distinguish between certain colors.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-convey" title="Point de contrle 2.1 des WCAG 1.0 ">
 2.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 2.1_HTML_01, 2.1_HTML_02, 2.1_HTML_03, 2.1_CSS_01</p>Type
-of criterion: design</p>Can be accomplished: Yes
-Comments:
-WSS 3.0 and MOSS 2007 sites do
-not rely on the use of color alone to convey information.</p>
-Furthermore, WSS 3.0 and
-MOSS 2007 can be used to create templates (see
-10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
-)and Web pages that satisfy this
-criterion. It remains the responsibility of MOSS 2007 developers to ensure that
-their Web pages satisfy this criterion. </p>3.2:
-Is there enough contrast between colors to be distinguishable by users who have
-impaired color vision?</p>Some
-color combinations should be avoided, such as red with blue, yellow with
-violet, yellow with green, and so forth. When there is not enough contrast
-between colors on a page, the information provided by contrast might not be
-accessible to users with poor or impaired color vision.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast"
-title="Point de contrle 2.2 des WCAG 1.0 ">
-2.2</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast"
-title="Point de contrle 2.2 des WCAG 1.0 ">
-2.2</a>
-</p>UWEM
-1.0 Test(s): 2.2_HTML_01, 2.2_CSS_01</p>Type
-of criterion: design</p>Can be accomplished: Yes<b>
-Comments:
-See 3.1 in this
-section.</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 2.1_HTML_01, 2.1_HTML_02, 2.1_HTML_03, 2.1_CSS_01</p>Type of criterion: design</p>Can be accomplished: Yes
+Comments: WSS 3.0 and MOSS 2007 sites do not rely on the use of color alone to convey information.</p>
+Furthermore, WSS 3.0 and MOSS 2007 can be used to create templates (see
+10.1 in section 5.1.11 Information layout)and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that
+their Web pages satisfy this criterion. </p>
+3.2: Is there enough contrast between colors to be distinguishable by users who have impaired color vision?</p>
+Some color combinations should be avoided, such as red with blue, yellow with violet, yellow with green, and so forth. When there is not enough contrast between colors on a page, the information provided by contrast might not be accessible to users with poor or impaired color vision.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast" title="Point de contrle 2.2 des WCAG 1.0 ">2.2</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast" title="Point de contrle 2.2 des WCAG 1.0 "> 2.2</a></p>
+UWEM 1.0 Test(s): 2.2_HTML_01, 2.2_CSS_01</p>
+Type of criterion: design</p>
+Can be accomplished: Yes<b>
+Comments: See 3.1 in this section.</p>
 WSS 3.0 and MOSS 2007 natively offer support for High Contrast color schemes: the pages in a WSS 3.0/MOSS 2007 site are designed to display correctly if a High Contrast color scheme is applied.</p>
 This is integrated in the site definitions as originally described in the MSDN article <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/odc_SP2003_ta/html/Office_SharePointAccessibility.asp" title="Tips for Enhancing the Accessibility of SharePoint Web Sites">Tips for Enhancing the Accessibility of SharePoint Web Sites</a>in section &quot; Create and Apply High-Contrast Themes to Web Sites.&quot;</p>
 It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
-To assess this criterion, a color contrast evaluation tool, such as the <a href="http://www.visionaustralia.org.au/info.aspx?page=628">free downloadable software by Vision Australia</a>
-, can be used to verify foreground and background color combinations to determine
-whether the color contrast enables proper viewing. The identification of proper color visibility is based on the <a href="http://www.w3.org/TR/AERT#color-contrast" title="algorithmes du W3C de visibilit des couleurs">algorithms</a>provided by the W3C.</p>
+To assess this criterion, a color contrast evaluation tool, such as the <a href="http://www.visionaustralia.org.au/info.aspx?page=628">free downloadable software by Vision Australia</a>, can be used to verify foreground and background color combinations to determine whether the color contrast enables proper viewing. The identification of proper color visibility is based on the <a href="http://www.w3.org/TR/AERT#color-contrast" title="algorithmes du W3C de visibilit des couleurs">algorithms</a>provided by the W3C.</p>
 (At the same time, browsers with Optical Zoom features can easily resize text on WSS 3.0/MOSS 2007 sites.)</p>
 5.1.5
 Multimedia4.1:
 Can the information that is conveyed by multimedia be provided another way?</p>
 Whenever multimedia is used to provide information, it is important to provide an alternative for those who do not have access to multimedia. For example, if a multimedia file is made available on a Web site, it is important to provide an accessible text-based alternative in a standard format, such as RTF, TXT, or HTML.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions" title=1.3>
-_Toc404766599'>
-_Toc426970132'>
-_Toc74996578'>1.3</a>
-, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions">1.3</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent">1.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.3_external_01, 1.3_external_02, 1.1_HTML_01, 1.1_HTML_02,
-1.1_HTML_03, 1.1_HTML_04, 1.1_HTML_05, 1.1_HTML_06, 1.1_HTML_09, 1.1_HTML_10,
-1.1_external_01, 1.1_external_02, 6.3_HTML_01</p>Type
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 1.3_external_01, 1.3_external_02, 1.1_HTML_01, 1.1_HTML_02, 1.1_HTML_03, 1.1_HTML_04, 1.1_HTML_05, 1.1_HTML_06, 1.1_HTML_09, 1.1_HTML_10, 1.1_external_01, 1.1_external_02, 6.3_HTML_01</p>Type
 of criterion: design / development</p>Can be accomplished:Yes
-Comments:
-Very few animations in used within WSS 3.0/MOSS 2007 sites and when they are used, an ALT text description of what the animated image is doing is systematically provided. Training videos have an equivalent text based representation available.</p>
-This said, WSS 3.0 and MOSS 2007 can be used to create templates (see
-10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
-)and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
-4.2:
-Is the Multimedia content synchronized with the alternate support?</p>
+Comments: Very few animations in used within WSS 3.0/MOSS 2007 sites and when they are used, an ALT text description of what the animated image is doing is systematically provided. Training videos have an equivalent text based representation available.</p>
+This said, WSS 3.0 and MOSS 2007 can be used to create templates (see 10.1 in section 
+5.1.11Information layout)and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
+4.2: Is the Multimedia content synchronized with the alternate support?</p>
 If a video with sound is used on a site, as in the case of an interview between several people, it is important to synchronize the alternate support with the picture and the sound in the video. The W3C recommends the use of the Synchronized Multimedia Integration Language (SMIL) programming language.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents" title="Point de contrle 1.4 des WCAG 1.0 ">1.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions">1.3</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents" title="Point de contrle 1.4 des WCAG 1.0 ">1.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions">1.3</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 1.4_external_01</p>Type
-of criterion: design / development</p>Can be accomplished: Yes
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 1.4_external_01</p>Type of criterion: design / development</p>Can be accomplished: Yes
 Comments: This criterion requires the use a tool such as <a href="http://www.hisoftware.com/hmcc" title=Hi-Caption>Hi-Caption</a> from HiSoftware, which is a Synchronized Multimedia Integration Language (SMIL) presentation editor, or Microsoft Synchronized Accessible Media Interchange (SAMI). Please refer to the technical articles <a href="http://msdn.microsoft.com/library/en-us/dnacc/html/atg_samiarticle.asp" title="Understanding SAMI 1.0">Understanding SAMI 1.0</a> and <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp" title="Adding Closed Captions to Digital Media">Adding Closed Captions to Digital Media</a> <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp" title="Adding Closed Captions to Digital Media">for addition information about how to add subtitle tracks to the Windows Media format.</a>
 </p>
 You might want to refer to <a href="http://www.hisoftware.com/hmcc/hmmc-paper.htm" title="Creating Accessible Multimedia Demos with HiSoftware AccVerify, Hi-Caption, Microsoft PowerPoint and Microsoft Producer">HiSoftware Hi-Caption Studio - Creating Accessible Demos</a> as an illustration.</p>
-It remains the responsibility of MOSS 2007 developers to ensure that their multimedia content satisfies this criterion.</p><a
-name="_Ref153606043"> 
-5.1.6 
-Tables</a> 5.1:
+It remains the responsibility of MOSS 2007 developers to ensure that their multimedia content satisfies this criterion.</p>
+5.1.6  Tables</a> 5.1:
 Is the SUMMARY attribute present and relevant?</p>
 If the SUMMARY attribute is used correctly, it provides additional information to disabled users, such as the visually impaired, about the tables in a Web page. If a Web page contains menu bars that are created by using an HTML table, setting SUMMARY=&quot;Menu bar&quot; provides the user with an additional information about the table function.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries" title="Point de contrle 5.5 des WCAG 1.0 ">
 5.5</a>
-</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: development</p>Can be accomplished: Yes
-Comments:
-Tables are often used in WSS 3.0 and MOSS 2007 especially for laying out information on a page and systematically have the SUMMARY attribute properly set.</p>
+</p>
+UWEM 1.0 Test(s): -</p>Type
+of criterion: development</p>Can be accomplished: Yes 
+Comments: Tables are often used in WSS 3.0 and MOSS 2007 especially for laying out information on a page and systematically have the SUMMARY attribute properly set.</p>
 5.2: In a data table, does the CAPTION tag provide the title of the table?</p>
 Rather than using formatted text to provide the title of a table, it is better to use the CAPTION tag, which is the tag dedicated to displaying table titles.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries" title="Point de contrle 5.5 des WCAG 1.0 ">5.5</a>
-</p>UWEM
-1.0 Test(s): 12.3_HTML_07, 12.3_HTML_08, 5.4_HTML_04</p>Type of criterion: development</p>Can be accomplished: Yes 
-Comments:
-WSS 3.0 and MOSS 2007 can be used to create templates (see
+</p>
+UWEM 1.0 Test(s): 12.3_HTML_07, 12.3_HTML_08, 5.4_HTML_04</p>Type of criterion: development</p>Can be accomplished: Yes 
+Comments: WSS 3.0 and MOSS 2007 can be used to create templates (see
 10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
-)
-andWeb pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>5.3: In data tables, are the column headers appropriate?</p>In HTML data tables, the TH tag specifies column headers, enabling users of assistive technologies to use text-to-voice software to determine that they are column headers.</p> WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers" title="Point de contrle 5.1 des WCAG 1.0 ">5.1</a>
+5.1.11Information layout) and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>5.3: In data tables, are the column headers appropriate?</p>In HTML data tables, the TH tag specifies column headers, enabling users of assistive technologies to use text-to-voice software to determine that they are column headers.</p> WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers" title="Point de contrle 5.1 des WCAG 1.0 ">5.1</a>
 </p>
 WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout" title="Point de contrle 5.4 des WCAG 1.0 ">
 5.4</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 5.1_HTML_01, 5.4_HTML_01, 5.4_HTML_01</p>Type
-of criterion: development</p>Can be accomplished: Yes 
-Comments:
-For tabular data tables, table header cells (TH tags) are systematically used. Column heading cells are defined:</p>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 5.1_HTML_01, 5.4_HTML_01, 5.4_HTML_01</p>
+Type of criterion: development</p>Can be accomplished: Yes 
+Comments: For tabular data tables, table header cells (TH tags) are systematically used. Column heading cells are defined:</p>
 &lt;TH scope=&quot;col&quot;&gt;Last
 Name&lt;/TH&gt;</p>
-For
-example, on the Announcements page, in the default All Items view, the column headers Title and Modified are contained in table header cells.</p>
+For example, on the Announcements page, in the default All Items view, the column headers Title and Modified are contained in table header cells.</p>
 Similarly, row heading cells are defined where needed:</p>
 &lt;TH scope=&quot;row&quot;&gt;Item
 Code&lt;/TH&gt;</p>
 5.4:
 In a data table, does a HEADERS attribute link to each of the data cells in the table?</p>
 When correctly configured in a data table, the HEADERS and ID attributes make it possible to link each data cell to the appropriate column header. This approach enables users that have only a linear view of the table to know which header is linked to the current data cell.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure" title="Point de contrle 5.2 des WCAG 1.0 ">5.2</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure" title="Point de contrle 5.2 des WCAG 1.0 ">5.2</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 5.2_HTML_01, 5.2_HTML_02, 5.4_HTML_03</p>Type
-of criterion: development</p>Can be accomplished: Yes
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 5.2_HTML_01, 5.2_HTML_02, 5.4_HTML_03</p>Type of criterion: development</p>Can be accomplished: Yes
 Comments:
--</p>5.5:
-Is the content in formatted tables in correct sequence?</p>
+-</p>5.5: Is the content in formatted tables in correct sequence?</p>
 In formatted tables, the information must be ordered so that it is displayed in an equivalent sequence when the information is read in a linear fashion. Care must be taken when organizing information in a formatted table. HDL development tools that are currently available have a tendency to nest tables within one another. The result is that occasionally differences occur between the visual appearance of information in a graphical browser and the text equivalent, because the latter is based on the structure of the HTML code (as in LYNX-type text browsers, for example).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout" title="Point de contrle 5.3 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout" title="Point de contrle 5.3 des WCAG 1.0 ">
 5.3</a>
 </p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 5.3_HTML_01</p>Type of criterion: design</p>Can be accomplished:Yes<b>
 Comments:
 - </p>
 5.1.7
-Links6.1:
-Are Link titles no more than 80 characters long?</p>
+Links
+6.1: Are Link titles no more than 80 characters long?</p>
 Use a maximum of 80 characters in hypertext link titles (accents and spaces count for one character as well).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">
 13.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): -</p>Type
 of criterion: design / development</p>Can be accomplished: Yes
 Comments:The standard Web Part for link handling enables authors to publish links with titles containing a maximum of 256 characters. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion with a title of no more than 80 characters.</p>
 6.2: Are links explicit enough?</p>Links must be understandable independent of the page context. Some assistive technologies are able to display a list of available links. These links must be understandable without the context of the Web page to enable rapid scanning. Avoid links such as &quot;click here.&quot;</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
-</p>
-<p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p><p>UWEM 1.0 Test(s): 13.1_HTML_02</p>Type
-of criterion: design / development</p>Can be accomplished: Yes<p>Comments:
-This criterion is subjective.</p>
-6.3:
-Is the TITLE attribute used, if required, and is it no more than 80 characters long?</p>
-In HTML, the TITLE attribute is necessary if additional information is required to understand a link. For example, if a link is used to download a file, the TITLE attribute can provide the file name, file size in bytes, file format, and destination (&quot;open in new window&quot;).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 "> 13.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: development</p>Can be accomplished: Yes
-Comments: -</p>6.4: Does the TITLE attribute provide more information about the link than the link title itself?</p>The only information that some users have about a link is the title of the link or the content of the TITLE attribute. Therefore, the content of the TITLE attribute should, at the very least, repeat the information contained in the link title. For example, a TITLE attribute that simply indicates &quot;this link opens in a new window&quot; is not adequate, because the user does not know the link destination. However, &quot;Read article on tourism in China (new window)&quot; provides all the essential information required about the link.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">
-13.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 13.1_HTML_01, 13.1_HTML_02</p>Type
-of criterion: - development</p>Can be accomplished: Yes (see 6.3)
-Comments: 
-See 6.3 in this section.</p>6.5:
-Do all identical link titles lead to the same target?</p>
-Avoid using link titles such as &quot;Read article&quot; multiple times on a page. It is important to use link titles that are not identical to help people who wish to move from link to link to read the page more quickly. It is also important to use short, explicit links with unambiguous destinations.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 13.1_HTML_01</p>Type of criterion: design</p>Can be accomplished: YesComments: -</p>
-5.1.8
-Scripts7.1:
-If a script requires alternate text to make it accessible, is the information provided by the alternate text equivalent to the information provided by the script?</p>
-The information about a script should remain available even if the script is disabled. For example, if a JavaScript script is used to validate an online form, the alternative might be a server-side data entry control. Scripts can be disruptive to users of assistive technologies that do not support scripts or that support them only in a limited fashion. In addition, some users voluntarily disable script execution in standard browsers. For this reason, an alternative must be available to retain the information generated by the scripts.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/#gl-new-technologies" title="Point de contrle 6.2 des WCAG 1.0 ">6.2</a>, <a href="http://www.w3.org/TR/WCAG10/#gl-new-technologies" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a>, <a href="http://www.w3.org/TR/WCAG10/#tech-directly-accessible" title="Point de contrle 8.1 des WCAG 1.0">8.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_02</p>Type
-of criterion: design / development</p>Can be accomplished: Yes
-Comments:
-As previously described (see section 
-
-_Ref153609823 \r \h \* MERGEFORMAT 5.1.1
-
-
-
-_Ref153609823 \h \* MERGEFORMAT A
-More accessible Mode
-
-),
-a more accessible mode allows users with special needs to identify themselves so that the site can change the way some of the dynamic content is rendered. With this mode, the JavaScript menus are rendered as plain HTML links in a new window making it easier for users to interact with the menu. At the same time, the user is informed that a new window will open if he clicks on the menu link; the TITLE attribute contains the Open menu terminology (see point 13.3 in section 
-
-_Ref153610813 \r \h \* MERGEFORMAT 5.1.14
-
-
-
-_Ref153610813 \h \* MERGEFORMAT Accessible
-content
-
-).</p>
-Furthermore, WSS 3.0 and MOSS 2007 can be used to create templates (see 10.1 in section 
-
-5.1.11
-
-
-
-Information layout)
-and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
-7.2:
-Can actions be performed even if the peripheral for which they were designed is
-disabled?</p>
-Some functions of a Web site, such as those generated by JavaScript scripts, can be activated only by a mouse click. However, some users cannot use a mouse to browse through a Web site. It must be possible to browse through a Web site by using just a keyboard.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts" title="Point de contrle 6.4 des WCAG 1.0 ">6.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable" title="Point de contrle 9.2 des WCAG 1.0 ">9.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events" title="Point de contrle 9.3 des WCAG 1.0 ">9.3</a>
+<p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p><p>UWEM 1.0 Test(s): 13.1_HTML_02</p>
+Type of criterion: design / development</p>Can be accomplished: Yes<p>Comments:
+This criterion is subjective.</p>
+6.3: Is the TITLE attribute used, if required, and is it no more than 80 characters long?</p>
+In HTML, the TITLE attribute is necessary if additional information is required to understand a link. For example, if a link is used to download a file, the TITLE attribute can provide the file name, file size in bytes, file format, and destination (&quot;open in new window&quot;).</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 "> 13.1</a>
 </p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 9.2_external_01, 6.3_HTML_02, 6.4_HTML_01, 6.4_HTML_02,
-6.4_external_01, 8.1_HTML_01, 8.1_external_01, 9.3_HTML_01</p>Type
-of criterion: design / development</p>Can be accomplished: Yes<b>
-Comments:
- Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide smarter and more intuitive use of access keys on common commands.The UI controls, features and commands are available directly by using the keyboard. Every action a mouse user can perform is available to keyboard user. For example, the MOSS 2007 technologies offer a keyboard accessible date pickers.</p>
+1.0 Test(s): -</p>
+Type of criterion: development</p>Can be accomplished: Yes
+Comments: -</p>6.4: Does the TITLE attribute provide more information about the link than the link title itself?</p>The only information that some users have about a link is the title of the link or the content of the TITLE attribute. Therefore, the content of the TITLE attribute should, at the very least, repeat the information contained in the link title. For example, a TITLE attribute that simply indicates &quot;this link opens in a new window&quot; is not adequate, because the user does not know the link destination. However, &quot;Read article on tourism in China (new window)&quot; provides all the essential information required about the link.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
+1.0 Test(s): 13.1_HTML_01, 13.1_HTML_02</p>Type
+of criterion: - development</p>Can be accomplished: Yes (see 6.3)
+Comments:  See 6.3 in this section.</p>6.5:
+Do all identical link titles lead to the same target?</p>
+Avoid using link titles such as &quot;Read article&quot; multiple times on a page. It is important to use link titles that are not identical to help people who wish to move from link to link to read the page more quickly. It is also important to use short, explicit links with unambiguous destinations.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
+1.0 Test(s): 13.1_HTML_01</p>Type of criterion: design</p>Can be accomplished: YesComments: -</p>
+5.1.8 Scripts
+7.1: If a script requires alternate text to make it accessible, is the information provided by the alternate text equivalent to the information provided by the script?</p>
+The information about a script should remain available even if the script is disabled. For example, if a JavaScript script is used to validate an online form, the alternative might be a server-side data entry control. Scripts can be disruptive to users of assistive technologies that do not support scripts or that support them only in a limited fashion. In addition, some users voluntarily disable script execution in standard browsers. For this reason, an alternative must be available to retain the information generated by the scripts.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/#gl-new-technologies" title="Point de contrle 6.2 des WCAG 1.0 ">6.2</a>, <a href="http://www.w3.org/TR/WCAG10/#gl-new-technologies" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a>, <a href="http://www.w3.org/TR/WCAG10/#tech-directly-accessible" title="Point de contrle 8.1 des WCAG 1.0">8.1</a>
+</p> WCAG
+1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>\
+UWEM 1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_02</p>Type of criterion: design / development</p>Can be accomplished: Yes
+Comments: As previously described (see section  5.1.1A More accessible Mode), a more accessible mode allows users with special needs to identify themselves so that the site can change the way some of the dynamic content is rendered. With this mode, the JavaScript menus are rendered as plain HTML links in a new window making it easier for users to interact with the menu. At the same time, the user is informed that a new window will open if he clicks on the menu link; the TITLE attribute contains the Open menu terminology (see point 13.3 in section 
+
+5.1.14 Accessible content).</p>
+Furthermore, WSS 3.0 and MOSS 2007 can be used to create templates (see 10.1 in section 
+5.1.11Information layout)
+and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
+7.2: Can actions be performed even if the peripheral for which they were designed is disabled?</p>
+Some functions of a Web site, such as those generated by JavaScript scripts, can be activated only by a mouse click. However, some users cannot use a mouse to browse through a Web site. It must be possible to browse through a Web site by using just a keyboard.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts" title="Point de contrle 6.4 des WCAG 1.0 ">6.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable" title="Point de contrle 9.2 des WCAG 1.0 ">9.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events" title="Point de contrle 9.3 des WCAG 1.0 ">9.3</a>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 9.2_external_01, 6.3_HTML_02, 6.4_HTML_01, 6.4_HTML_02, 6.4_external_01, 8.1_HTML_01, 8.1_external_01, 9.3_HTML_01</p>
+Type of criterion: design / development</p>Can be accomplished: Yes<b>
+Comments: Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide smarter and more intuitive use of access keys on common commands.The UI controls, features and commands are available directly by using the keyboard. Every action a mouse user can perform is available to keyboard user. For example, the MOSS 2007 technologies offer a keyboard accessible date pickers.</p>
 You can press the TAB key and SHIFT+TAB to move back and forth between elements on any page, ALT+&lt;access key&gt; to bring focus to commonly used controls making it easier for users to activate these common controls.The access keys that make sense are privileged while attempting to avoid duplicate access keys on a page and the use of Internet Explorer reserved access keys.Thus, an OK button uses ALT+O on all forms pages.</p> You can also find keyboard shortcuts for many commands at the following Internet address: <a href="http://office.microsoft.com/en-us/help/HA101733621033.aspx">Arial;http://office.microsoft.com/en-us/help/HA101733621033.aspx</a>.</p>
-It is recommended that users with AT devices activate the More Accessible mode(see eponymsection 
+It is recommended that users with AT devices activate the More Accessible mode(see eponymsection 5.1.1 A More accessible Mode). As previously explained, this mode enables users to interact with the elements of a WSS 3.0/MOSS 2007 site by using assistive technologies (see eponym section 
 
-_Ref153609823 \r \h \* MERGEFORMAT 
-5.1.1
-
-
- 
-_Ref153609823 \h \* MERGEFORMAT 
-A More accessible Mode
-
-
- )
-. As previously explained, this mode enables users to interact with the elements of a WSS 3.0/MOSS 2007 site by using assistive technologies (see eponym section 
-
-_Ref122419931 \r \h
-1.2.2
-
-
-
-
-_Ref122419931 \h
-Assistive technologies
-
-
-) 
+1.2.2 Assistive technologies) 
 such as screen readers.</p>
-Templates (see
-10.1 in section 
+Templates (see 10.1 in section 
 
-5.1.11
-
-
-
-Information
-layout
-
-)and Web pages that satisfy this criterion can be created. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
+5.1.11Information layout)and Web pages that satisfy this criterion can be created. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
 5.1.9
 Mandatory elements 8.1:
 Is the DOCTYPE tag present at the beginning of the page source code?</p>
 International WAI guidelines suggest using an appropriate and valid Document Type Definition (DTD) to indicate the type of electronic document that the browser must load (frame-based, HTML, XML, and so forth). In HTML, the DOCTYPE tag is required to define the document type.</p>
 WCAG
 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar" title="Point de contrle 3.2 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar" title="Point de contrle 3.2 des WCAG 1.0 ">
 3.2</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 3.2_HTML_01</p>Type
-of criterion: development</p>Can be accomplished: Yes
-Comments: 
-The DOCTYPE tag is not available by default.</p>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 3.2_HTML_01</p>
+Type of criterion: development</p>Can be accomplished: Yes
+Comments:  The DOCTYPE tag is not available by default.</p>
 WSS 3.0 and MOSS 2007 can be used to create templates (see 10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
-)
+5.1.11Information layout)
 and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>Note that the current versions of WSS and MOSS do not strictly comply with the formal syntax requirements specified in HTML 4.01 or XHTML 1.0 as required by checkpoint 3.2.</p>
 8.2: Is the LANG attribute present at the beginning of the page source code to clearly identify the language used?</p>It is important to specify the language of a document to enable assistive technologies to adapt content to the language. In HTML, the LANG attribute in the HTML tag specifies the language.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-lang" title="Point de contrle 4.3 des WCAG 1.0 ">
 4.3</a>
-</p>UWEM
-1.0 Test(s): -</p>Type of criterion: development</p>Can be accomplished: Yes
+</p>
+UWEM 1.0 Test(s): -</p>Type of criterion: development</p>Can be accomplished: Yes
 Comments: 
 The LANG attribute is not used by default.</p>
 WSS 3.0 and MOSS 2007 can be used to create templates (see 10.1 in section 
-
-5.1.11
-
-
-
-Information
-layout
-
+5.1.11Information layout
 )and Web pages that satisfy this criterion. It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
 8.3: Is there a TITLE tag in the page header?</p>
 In HTML, the title of a page is coded by including a TITLE tag in the document header. Voice browsers list the title of the page first so that a user can get positioned on the Web site. The title is a constant source of support to those having an attention deficit disorder. The tag also makes it easier for search
 engines to reference the Web site.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
 13.2</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 13.2_HTML_01</p>Type
-of criterion: development (development rules)</p>Can be accomplished: Yes
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.2_HTML_01</p>
+Type of criterion: development (development rules)</p>Can be accomplished: Yes
 Comments: 
--</p>8.4:
-Is the content of the TITLE tag explicit?</p>
+-</p>8.4: Is the content of the TITLE tag explicit?</p>
 The TITLE tag provides the title of the page that was just loaded. It is important to provide an explicit title to help users get oriented during browsing.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
 13.2</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
+</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
 1.0 Test(s): 13.2_HTML_01</p>Type
 of criterion: design</p>
 Can be accomplished: Yes
-Comments: 
-See 8.3 in this section. This criterion is subjective.</p>8.5:
+Comments:  See 8.3 in this section. This criterion is subjective.</p>8.5:
 Is the content of the TITLE tag different from one page to the next?</p>
 Using an identical title on every page of a Web site can be confusing to users. The title of the page is the first information that appears on the screen. Assigning the same title to multiple documents is misleading.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">
 13.2</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): -</p>Type
-of criterion: design</p>Can be accomplished: Yes
-Comments: 
-See 8.3 in this section. This criterion is subjective.
-</p>8.6:
-Are language changes on a page indicated?</p>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>Type of criterion: design</p>Can be accomplished: Yes
+Comments: See 8.3 in this section. This criterion is subjective.</p>
+8.6: Are language changes on a page indicated?</p>
 Whenever a language change occurs on a page, it should be indicated to the user. If text-to-voice software is used, a change in language causes the software detection language to change as specified by the LANG tags.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-changes" title="Point de contrle 4.1 des WCAG 1.0 ">4.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 4.1_HTML_01, 4.1_HTML_02, 4.1_HTML_03, 4.1_HTML_04, 4.1_CSS_01,
-4.1_CSS_02</p>Type
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 4.1_HTML_01, 4.1_HTML_02, 4.1_HTML_03, 4.1_HTML_04, 4.1_CSS_01, 4.1_CSS_02</p>Type
 of criterion: development</p>Can be accomplished: N/A
 Comments: Compared to SharePoint 2003 technologies, MOSS 2007 technologies now support multilingual websites. The implementation of a multilingual environment is based on a new concept called &quot;variations&quot;.</p>
 This is based on a page or site that is marked as a &quot;source label&quot;. Other languages can inherit from that source label and use the defined settings for its specific language. For additional information, you can refer to the article <a href="http://www.sharepointblogs.com/vandest/archive/2006/06/07/8157.aspx" title="SharePoint 2007 Beta 2: Variations (multi language) on sub sites">Arial;SharePoint 2007 Beta 2: Variations (multi language) on sub sites</a> on Steven Van de Craen's Blog.</p>
 Taking into account the adopted approach, a language change should normally not occur on a page. If it does, it probably originates from a WSS 3.0 or MOSS 2007 control.</p>
 5.1.10
- Information
-structuring 9.1:
+ Information structuring 9.1:
 Is information structured consistently for the general context of the site?</p>
 The structure of information on a page depends on the type of site (news, gaming, scientific, artistic, and so forth). In addition, the individual elements that provide information on the page (such as images and titles) might not be a problem in and of themselves, but the arrangement of these elements in relation to one another might not be consistent. For example, on a news site, no text should be
 displayed before the title.</p>
@@ -949,62 +492,30 @@ WCAG
 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward" title="Point de contrle 14.1 des WCAG 1.0 ">
 14.1</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 12.3_HTML_10, 12.3_HTML_15, 14.1_HTML_01</p>Type
-of criterion: design</p>Can be accomplished:Yes
-Comments: 
-This criterion is subjective.</p>9.2:
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 12.3_HTML_10, 12.3_HTML_15, 14.1_HTML_01</p>Type of criterion: design</p>Can be accomplished:Yes
+Comments:  This criterion is subjective.</p>9.2:
 Is the Web page presented in a consistent fashion?</p>\
 Use of styles that are available in HTML, for example H1 and H2, can provide structure to a Web page. Such tags are extremely important in structuring a Web page. For example, the H1 tag indicates a title and the H2 tag indicates subheadings. These tags must be used for their intended purpose, that is, to provide structure, and not for their graphic capabilities. Additionally, blocks of information should be separated from each other.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings" title="Point de contrle 3.5 des WCAG 1.0 ">
-3.5</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-front-loading" title="Point de contrle 13.8 des WCAG 1.0 ">
-13.8</a>
-</p>UWEM
-1.0 Test(s): 3.5_HTML_01, 3.5_HTML_02, 3.5_HTML_03, 3.5_HTML_04, 3.5_HTML_05</p>Type
-of criterion: design</p>Can be accomplished: Yes
-Comments: Tags
-are systematically used on WSS 3.0/MOSS 2007 sites to help convey the structure of the page to users of assistive technologies (see eponym section 
-
-_Ref122419931 \r \h \* MERGEFORMAT 1.2.2
-
-
-
-_Ref122419931 \h \* MERGEFORMAT mso-fareast-language:KO;font-style:normal;
-Assistive technologies
-
-).
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings" title="Point de contrle 3.5 des WCAG 1.0 ">3.5</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-front-loading" title="Point de contrle 13.8 des WCAG 1.0 ">
+13.8</a></p>
+UWEM 1.0 Test(s): 3.5_HTML_01, 3.5_HTML_02, 3.5_HTML_03, 3.5_HTML_04, 3.5_HTML_05</p>
+Type of criterion: design</p>
+Can be accomplished: Yes
+Comments: Tags are systematically used on WSS 3.0/MOSS 2007 sites to help convey the structure of the page to users of assistive technologies (see eponym section 
+Assistive technologies).
 This helps AT device users better understand the layout and structure of the pages.</p>
 The heading tags (H1, H2, H3, and H4) build a logical outline of the content on a page. If you use an assistive technology such as a screen reader, you can configure it to read only the heading tags on a page. This virtual outline of heading tags helps to improve the clarity of the page content. For example, the home page for a site contains one H1 tag that contains the site title, one H2 tag that contains the page title, an H3 tag around the title of each Web Part.</p>
-
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image022.png"
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image023.gif"
 alt=wssWebPartPage v:shapes="Picture_x0020_7"></p>
 Users of certain AT devices can retrieve an outline based on these tags and use it to easily understand the layout of the page and skip to the heading that they want.</p>
 As far as screen readers are concerned, this comes with further improvements in terms of navigation compared to SharePoint 2003 technologies.</p>
 For instance, each time a user visits a WSS 2.0 home page he will have to listen to the top navigation bar links, left side navigation links and finally the content of the page. The tab order is structured in the same way. Users will have to tab multiple times to get to the page content. In MOSS 2007 technologies, a Skip to main content link helps users to quickly jump to the most important content without having to tab through our navigation links 
-(see 12.1 in section  _Ref155935592 \r \h 
-5.1.13
-
-
- 
-  _Ref155935592 \h Browsing
-aids 
-
-
- 
-).
-
+(see 12.1 in section 5.1.13 Browsing aids ).
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image024.png"
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image025.gif"
-
-
 Moreover, the reading of the page has also evolved. As an illustration, here is how a screen reader reads the above WSS 2.0 homepage. Items in [ ] are ALT text descriptions, underlined items are links.</p>
 [Logo.]
 HomeDocuments and ListsCreateSite SettingsHelp[Icon.]</p>SharePoint
@@ -1036,8 +547,6 @@ new document[/_layouts/images/homepage.gif.]Links[Web
 Part Menu.]There are currently no favorite links to display. To add a new link, click &quot;Add
 new link&quot; below. Add new link
 (End of form 2.)</p>
-
-
 In WSS 3.0, here is how the homepage now looks to a screen reader. The red text existed in WSS 2.0 but has been removed (also identified by &lt;removed&gt;), and yellow text has been added in WSS 3.0 (also identified by &lt;added&gt;).</p>
 Skip to Main Content
 &lt;added&gt;</p>
@@ -1119,14 +628,8 @@ Links &lt;removed&gt;
 Links &lt;add H1 tag to this&gt;[Web Part Menu.]There are currently no favorite links to display. To add a new link, click &quot;Add new link&quot; below. Add new link (End of form 2.)</p>
 As illustrated above, understanding the layout and the structure of the pages is greatly facilitated.</p>
 For specific custom pages, templates (see 10.1 in section 
-
-5.1.11
-
-
-
-Information
+5.1.11Information
 layout
-
 )and Web pages that satisfy this criterion can be created. It therefore remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
 <a
 name="_Ref153356495"> 
@@ -1146,9 +649,7 @@ Can
 be accomplished: Yes
 Comments: 
 Publishing in WSS 3.0 and MOSS 2007 technologies is fundamentally a means of authoring and displaying information by using a set of templates. There are two fundamental templates to understand: master pages and page layouts.
- 
 Master pages (in both WSS 3.0 and MOSS 2007) and page layouts (only in MOSS 2007) dictate the overall look and feel of your MOSS 2007 technologies-based site.</p>
- 
 Master pages contain controls that are shared across multiple page layouts, such as navigation, search, or language-preference for multilingual sites. Master pages are intended to easily provide a consistent look and feel for the site. They can be used to position items that must be shared by all pages, such as navigational controls, company logos, and copyright notices. ASP.NET 2.0 user controls, Web server controls, and Web Parts can be used within master pages</p>
 Page layouts contain field controls and Web Parts. A page layout provides a structured approach to collecting content from content authors and displaying it on a page within a site. Each page layout is based on a WSS 3.0 content type and an associated ASP.NET 2.0 page template. In addition to field controls, an ASP.NET 2.0 page template for a page layout can also contain ASP.NET server
 controls and Web Part zones.</p>
@@ -1215,248 +716,131 @@ Comments:
 -</p>11.3:
 Is the data entry control in online forms accessible?</p>
 If an online form is validated by using a script on the client, for example, provide an alternative to the script so that the user, using any type of browser, can submit the information from the form to the server. Additionally, if an HTML data entry control is used, mandatory data entry fields should be specified explicitly (for example, mandatory fields are preceded by an asterisk). Developers should not use colors to indicate mandatory fields or specify the mandatory fields only at the bottom of the page.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a></p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">6.5</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">6.5</a>
 </p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_01, 6.3_HTML_02, 6.5_HTML_03</p>Type
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_01, 6.3_HTML_02, 6.5_HTML_03</p>Type
 of criterion: development</p>Can be accomplished: YesComments: 
-
 -<a
 name="_Ref155935592"> 
 5.1.13Browsing aids</a>12.1:
 Is the main navigation menu on the Web site located in the same place on all
 pages?</p>
 When users browse through a site, they find it easier to locate a menu or navigation toolbar if it is always in the same place on all pages of the Web site. If browsing mechanisms differ from one page to the next, it creates difficulties for users and might cause them to abandon the Web site.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">
 13.4</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">
+</p>WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">
 14.3</a>
-</p>UWEM
-1.0 Test(s): 13.4_HTML_01</p>Type
-of criterion: design</p>
+</p>UWEM 1.0 Test(s): 13.4_HTML_01</p>Type of criterion: design</p>
 Can be accomplished: Yes
-Comments:
-Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide two important options, i.e. the Turn on more accessible mode link and the Skip to main content link. These two hidden links are the first two options in the tab order.
+Comments: Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide two important options, i.e. the Turn on more accessible mode link and the Skip to main content link. These two hidden links are the first two options in the tab order.
 alt="Skip to main content"
 src="guidelines-for-designing-and-developing-accessible-web-sites_v2_files/image026.png"
 As previously mentioned in section 
-
-_Ref153609823 \r \h \* MERGEFORMAT 
 5.1.1
-
-
- 
-_Ref153609823 \h \* MERGEFORMAT 
-A More accessible Mode
-,if you want to turn on More Accessible mode, you can do so by pressing the TAB key after the page in the browser has active focus. In addition, if you want to skip repetitive navigation links and go directly to the main content area of the page, you can do so by pressing the TAB key until you reach the Skip to main content link.</p>
+A More accessible Mode, if you want to turn on More Accessible mode, you can do so by pressing the TAB key after the page in the browser has active focus. In addition, if you want to skip repetitive navigation links and go directly to the main content area of the page, you can do so by pressing the TAB key until you reach the Skip to main content link.</p>
 Skip to main content links to help visually impaired users quickly jump to the most important content without having to tab through our navigation links.</p>
 In addition, standard navigation bread crumbs to assist with site navigation and orienting users on where they are in the site. The pages in a WSS 3.0/MOSS 2007 site use breadcrumb navigation links that identify where the current page or site fits into the overall hierarchy of the site or site collection. These navigation links appear near the top of most pages, under the page name. For example, if you browse to a folder named Reports in the Shared Documents library for the Contoso site, the navigation links may display Contoso &gt;Shared Documents &gt; 
 Reports.</p>12.2:
 If keyboard shortcuts are defined for the site, are they active on the page?</p>
 If keyboard shortcuts are set up for a page, these shortcuts should be activated and homogeneous throughout the pages of the Web site.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 13.4_HTML_01</p>Type
-of criterion: design / development</p>
-Can
-be accomplished: Yes
-Comments:
- Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide smarter and more intuitive use of access keys on common commands. The UI controls, features and commands are available directly by using the keyboard.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a>
+</p>WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM
+1.0 Test(s): 13.4_HTML_01</p>Type of criterion: design / development</p>
+Can be accomplished: Yes
+Comments: Compared to the SharePoint 2003 technologies, MOSS 2007 technologies provide smarter and more intuitive use of access keys on common commands. The UI controls, features and commands are available directly by using the keyboard.</p>
 You can press the TAB key and SHIFT+TAB to move back and forth between elements on any page. You can also find keyboard shortcuts for many commands at the following Internet address: <a href="http://office.microsoft.com/en-us/help/HA101733621033.aspx">Arial;http://office.microsoft.com/en-us/help/HA101733621033.aspx</a>. </p>
 <a
 name="_Ref153610813"> 
 5.1.14 
-Accessible content</a> 13.1:
-Can the user control screen refresh?</p>
+Accessible content</a> 13.1: Can the user control screen refresh?</p>
 When screen content is automatically refreshed, the cursor in screen readers (such as JAWS) is automatically reset to the top of the page, making it difficult for the user to read the entire page.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh" title="Point de contrle 7.4 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh" title="Point de contrle 7.4 des WCAG 1.0 ">
 7.4</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 7.4_HTML_01, 7.4_HTML_02, 7.4_external_01</p>Type
-of criterion: development</p>Can be accomplished: Yes
-Comments:
-13.2:
-If the user is automatically redirected, is it without using a script?</p>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 7.4_HTML_01, 7.4_HTML_02, 7.4_external_01</p>Type of criterion: development</p>Can be accomplished: Yes
+Comments: 13.2: If the user is automatically redirected, is it without using a script?</p>
 It is best to use automatic redirection solutions from the server side. In this way, redirection does not depend on the client workstation.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward" title="Point de contrle 7.5 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward" title="Point de contrle 7.5 des WCAG 1.0 ">
 7.5</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 7.5_HTML_01, 7.5_HTML_02, 7.5_external_01</p>
-Type
-of criterion: Design / development (development rules)</p>
-Can
-be accomplished: N/A
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 7.5_HTML_01, 7.5_HTML_02, 7.5_external_01</p>
+Type of criterion: Design / development (development rules)</p>
+Can be accomplished: N/A
 Comments: 
 -</p>13.3:
 Is a Web site visitor alerted when new windows appear?</p>
 The term &quot;new windows&quot; can refer to two types of windows: new browser windows or pop-up windows. New browser windows are opened by using an HTML command, whereas pop-up windows are opened by using a script on the client side. In some cases, people who use browsers that do not support scripting on the client side or who voluntarily disable scripts in their browser do not have access to the information contained in pop-up windows. If a pop-up window opens automatically whenever a page is loaded, it makes the site difficult to read, especially for people who use assistive technologies for browsing. It is not recommended that new windows be opened, especially if the user is not notified.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">
 10.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 10.1_HTML_01, 10.1_HTML_02, 10.1_HTML_03</p>Type
-of criterion: design</p>Can be accomplished: Yes
-Comments:
-Occasionally within a WSS 3.0/MOSS 2007 site, clicking an element opens a new browser window. In such a case, additional information or warnings (through ALT text on image links and TITLE attributes on text links) are systematically provided for hyperlinks that will open a new window to help reduce confusion and improve the user experience. For example, the title attribute of a hyperlink that opens a new window contains (New window).</p>
-
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 10.1_HTML_01, 10.1_HTML_02, 10.1_HTML_03</p>Type of criterion: design</p>Can be accomplished: Yes
+Comments: Occasionally within a WSS 3.0/MOSS 2007 site, clicking an element opens a new browser window. In such a case, additional information or warnings (through ALT text on image links and TITLE attributes on text links) are systematically provided for hyperlinks that will open a new window to help reduce confusion and improve the user experience. For example, the title attribute of a hyperlink that opens a new window contains (New window).</p>
 13.4:
 Is there an alternative to scripts for opening new windows?</p>
 If no alternative to pop-ups is provided, some users cannot access pop-ups (for example, users whose browsers do not support scripting or who voluntarily disable
 scripting in their browser).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">10.1</a>
-</p>WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 6.2_HTML_03, 6.3_HTML_02</p>Type
-of criterion: design / development</p>Can be accomplished: Yes
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">10.1</a>
+</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>UWEM 1.0 Test(s): 6.2_HTML_03, 6.3_HTML_02</p>Type of criterion: design / development</p>Can be accomplished: Yes
 Comments: 
 See section 
-
-_Ref153609823 \r \h \* MERGEFORMAT 5.1.1
-
- 
-
-_Ref153609823 \h \* MERGEFORMAT A
 More accessible Mode
-
 .</p>
-13.5:
-Is additional information available to describe files that can be downloaded from the Web site?</p>
+13.5: Is additional information available to describe files that can be downloaded from the Web site?</p>
 When a user downloads files, the following information should be provided: file format, file size, link to a conversion utility if required, link to software needed to read the file format if required, and e-mail address for requesting a file in an alternate format. Files that are available for download on the Web site are not always in an accessible format. Therefore, it is important to provide the necessary means to access the downloadable files. If a file is in PDF format, for example, the user should be provided with the opportunity to download Acrobat Reader software (or a URL for an online conversion utility).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>WCAG
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>WCAG
 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-content-preferences" title="Point de contrle 11.3 des WCAG 1.0 ">
 11.3</a>
-</p>UWEM
-1.0 Test(s):</p>Type of criterion: development</p>Can be accomplished: Yes
-Comments: 
-File size is not available. See also 1.6 in section 
- 
- _Ref153607986 \r
-\h5.1.2
+</p>
+UWEM 1.0 Test(s):</p>Type of criterion: development</p>Can be accomplished: Yes
+Comments:  File size is not available. See also 1.6 in section 
+Graphics
 
- 
-
-_Ref153607986 \h \* MERGEFORMAT Graphics
-
-.</p>13.6:
-Does the specific presentation or layout of information interfere with the ability to access its content?</p>
+.</p>
+13.6: Does the specific presentation or layout of information interfere with the ability to access its content?</p>
 Care must be taken to ensure that specific layout or presentation elements (blinking text, scrolling text, and so forth) do not interfere with the user's ability to access the information: for example, fast blinking text (difficult for most users to read and even more difficult for people with visual disabilities) or fast scrolling information (difficult for people with visual disabilities or for people who have reading difficulties). If this type of presentation or layout is generated by an applet, a FLASH animation, or a GIF file, an alternative should be made available.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker" title="Point de contrle 7.1 des WCAG 1.0 ">7.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker" title="Point de contrle 7.1 des WCAG 1.0 ">7.1</a>
 </p>
 WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking" title="Point de contrle 7.2 des WCAG 1.0 ">7.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement" title="Point de contrle 7.3 des WCAG 1.0 ">7.3</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>UWEM
-1.0 Test(s): 7.1_HTML_01, 7.1_HTML_02, 7.1_HTML_03, 7.1_CSS_01, 7.1_external_01,
-7.1_external_02, 7.3_HTML_01, 7.3_HTML_02, 7.3_external_01, 7.3_external_02</p>Type
-of criterion: design</p>Can be accomplished: Yes<b>
-Comments:
-WSS 3.0 and MOSS 2007 can be used to createtemplates ( see 10.1 in section 
-
-
+</p> WCAG
+1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 7.1_HTML_01, 7.1_HTML_02, 7.1_HTML_03, 7.1_CSS_01, 7.1_external_01, 7.1_external_02, 7.3_HTML_01, 7.3_HTML_02, 7.3_external_01, 7.3_external_02</p>
+Type of criterion: design</p>Can be accomplished: Yes<b>
+Comments: WSS 3.0 and MOSS 2007 can be used to createtemplates ( see 10.1 in section 
 5.1.11
-
-
- 
-
-Information layout
-
-
- )
+Information layout )
  and Web pages that satisfy this criterion.</p>
 It remains the responsibility of MOSS 2007 developers to ensure that their Web pages satisfy this criterion.</p>
 Furthermore, as described in section 
-
-_Ref153609823 \r \h \* MERGEFORMAT 
 5.1.1
-
-
- 
-_Ref153609823 \h \* MERGEFORMAT 
 A More accessible Mode, the More Accessible Mode does not limit functionality, but instead enables alternate rendering methods for page elements so that they are compatible with assistive technologies ( see eponym section 
-
-_Ref122419931 \r \h \* MERGEFORMAT 
 1.2.2
-
-
- 
-_Ref122419931 \h \* MERGEFORMAT Assistive technologies
-
-
+Assistive technologies
 ).</p>
 5.1.15
  Summary
 As can be seen by the preceding discussion, MOSS 2007 technologies are capable of producing Web sites that comply with WCAG 1.0 checkpoints in all three priority levels.</p>
 This said, throughout the lifecycle of a MOSS 2007 technologies-based project, the design considerations identified in section 
-
-_Ref153013062 \r \h \* MERGEFORMAT 2.1
-
-
-
-  _Ref153013062 \h
- \* MERGEFORMAT
 Design checklist for accessible Web content
-
-
 as well as the ones described in section 
-
-_Ref153013112 \r \h \* MERGEFORMAT 2.2
-
-
-
-  _Ref153013112 \h
- \* MERGEFORMAT
 Coding
 checklist for accessible Web content
-
-
-should be observed.</p><h2 text-align:mso-list:l18 level2 lfo5'>
-<a name="_Toc155936370">
+should be observed.</p>
 5.2
  Assessment
-and validation of a MOSS 2007 Web site for WCAG 1.0 checkpoints</a></h2>The assessment and evaluation of a Web site content based on the MOSS 2007 technologies
-follow the overall approach and related methods developed under section 
-
-_Ref153017815 \r \h
+and validation of a MOSS 2007 Web site for WCAG 1.0 checkpoints</a></h2>The assessment and evaluation of a Web site content based on the MOSS 2007 technologies follow the overall approach and related methods developed under section 
 2.3
 
-
-&quot;
-  _Ref153017815 \hmso-element:
-field-separator'>
 Assessment
 and validation of accessible Web Content
-
-
 &quot;.</p><p>As indicated, such a validation should begin very early in the project, right from the design phase.</p>
           </section>
         </article>
