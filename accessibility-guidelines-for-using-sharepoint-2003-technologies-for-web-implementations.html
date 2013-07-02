@@ -13,360 +13,151 @@
         <article role="article">
           <section role="region">
             <h1>Accessibility Guidelines for Using SharePoint 2003 Technologies for Web Implementations</h1>
-
 SharePoint products and technologies facilitate team participation at the enterprise level.</p>
 Prior to Microsoft Office system 2007, through the combined features of Windows SharePoint Services (WSS) 2.0 and SharePoint Portal Server (SPS) 2003, users can build their own SharePoint 2003 Web sites and make them accessible throughout the enterprise.</p>
-
 SPS 2003 is a scalable gateway server that enables knowledge sharing between individuals or entire teams. SPS 2003:</p>
-
 Ensures secure integration of multiple systems by way of federated authentication through single sign-on and enterprise application integration capabilities.</p>
-
 Provides flexible tools for Web site deployment and management.</p>
-
 Facilitates teamwork through aggregation, organization, and search capabilities (supporting people, team, and information search).</p>
-
 Lets users locate the information they require quickly, through content targeting and customization of portal content and layout.</p>
-
 WSS 2.0 (a component of Windows Server 2003 R2) is a Web site creation engine that provides powerful information-sharing and document-based collaborative solutions. SharePoint 2003 Web sites represent a new standard in file management, from uploads to data sharing, enabling users to work collaboratively on documents, tasks, contacts, and events. These sites enable teams and Web site managers to easily manage Web site activity and content.</p>
-
 SPS 2003 makes use of WSS 2.0 by using SharePoint sites to create diverse portal content to effectively disseminate information, targeting individual or enterprise-wide needs. These sites are specific to SPS 2003, but they use technologies such as Web Parts and SharePoint Document Libraries, which are provided by WSS. SPS 2003 also extends the possibilities of WSS 2.0 by providing organizational and management tools for SharePoint Web sites. Use of the Site Registry enables organizations to aggregate, organize, find, and provision SharePoint sites across the enterprise. In addition, SPS 2003 enables users to disseminate information and documents that are stored in their WSS Web sites throughout the enterprise.</p>
-
 For additional information about SharePoint technologies, refer to the links for WSS 2.0 and SPS 2003 respectively at <a href="http://www.microsoft.com/windowsserver2003/technologies/sharepoint/default.mspx">http://www.microsoft.com/windowsserver2003/technologies/sharepoint/default.mspx</a> and <a href="http://www.microsoft.com/office/sharepoint/prodinfo/default.mspx">http://www.microsoft.com/office/sharepoint/prodinfo/default.mspx</a>.</p>
-
 4.1 Evaluation of SharePoint 2003 Web sites for WCAG 1.0 checkpoints</h2>
-
 This white paper evaluates the use of SharePoint 2003 technologies for creating Web sites that comply with the checkpoints defined for the <a href="http://www.w3.org/TR/WAI-WEBCONTENT/#Guidelines">14 guidelines in the Web Content Accessibility Guidelines (WCAG) 1.0</a>, which were developed by the W3C/WAI and published 5 May 1999 (see section 1.3.1 &quot;WCAG 1.0&quot;). Sometime after WCAG 2.0 is approved and released, a future version of this document will evaluate compliance with the guidelines in the new release. style='background:yellow;mso-highlight:yellow'></p>
-
 To assess how SharePoint 2003 technologies support and satisfy WCAG 1.0 guidelines, this document considers whether WSS 2.0 and, consequently, SPS 2003 support the checkpoints, or in some cases, how these products can be adapted to ensure compliance with the checkpoints.</p>
-
 This assessment takes into account the following documents: <a href="http://download.microsoft.com/download/c/2/3/c23bc250-5f80-4d0c-a29d-877355ff91e8/WindowsSharepointServices_VPAT.doc" title="VPAT de SharePoint Services 1.0">Windows SharePoint Services 2003 VPAT</a> and <a href="http://download.microsoft.com/download/c/2/3/c23bc250-5f80-4d0c-a29d-877355ff91e8/SharePointPortalServer2003_VPAT.doc" title="VPAT de SharePoint Portal Server 2003">SharePoint Portal Server 2003 VPAT</a>.</p>
-
 WSS 2.0 and SPS 2003 are the latest releases available at the date of publication of this white paper. For additional information, refer to the following links:</p>
-
 <a href="http://www.microsoft.com/downloads/details.aspx?familyid=B922B28D-806A-427B-A4C5-AB0F1AA0F7F9&amp;displaylang=fr" title="Windows SharePoint Services 2.0 avec Service Pack 2">Windows SharePoint Services 2.0 with Service Pack 2</a>
-
 <a href="http://www.microsoft.com/downloads/details.aspx?familyid=171DC9A7-B4BA-4759-BD64-6B7D851A97EF&amp;displaylang=en" title="SharePoint Portal Server 2003 Service Pack 2">SharePoint Portal Server 2003 Service Pack 2</a>
-
 These two Service Packs provide Microsoft SQL Server 2005 support.</p>
-
 WSS 2.0 with SP2 runs on the new Microsoft .NET Framework 2.0 Common Language Runtime (CLR), which means that it can run using ASP.NET 2.0 technology. However, WSS has not been redesigned to take advantage of any of the new major features of ASP.NET 2.0. At the core level, SP2 does not change the rendering behavior of WSS. In other words, WSS 2.0 cannot use Master Pages or the Web Parts 2.0 Framework. However, these new class libraries are available for customized Web Parts, Web pages, and event handlers.</p>
-
 WSS 2.0 SP2 treats .NET 2.0 Web Parts as standard Web controls and not as Web Parts. One alternative is to write a wrapper Web Part to make the ASP.NET 2.0 Web Part appear to be a WSS 2.0 Web Part.</p>
-
 However, SPS 2003 does not support .NET Framework 2.0, even with SP2, which requires <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9C552114-DC9A-43EE-9281-B080B7C280B4" title="Service Pack 2 de Windows SharePoint Services 2.0">Service Pack 2 of Windows SharePoint Services 2.0</a>. A SPS 2003 SP2 configuration with WSS 2.0 with SP2 is based on .NET Framework 1.1. This does not interfere with a SharePoint site running under ASP.NET 1.1 calling pages and Web services exposed by an ASP.NET 2.0 Web site.</p>
-
 Additional details are provided in the article <a href="http://office.microsoft.com/en-us/assistance/HA100806971033.aspx" title="Service Pack 2 for Windows SharePoint Services and SharePoint Portal Server 2003">Service Pack 2 for Windows SharePoint Services and SharePoint Portal Server 2003</a>.</p>
 The MOSS 2007 technologies (see chapter 
-
 Accessibility guidelines for using MOSS 2007 technologies for Web implementations), as a major release of both WSS 2.0 and SPS 2003, are based on, and hence make extensive use of, ASP.NET 2.0 and its multitude of features, including eAccessibility capabilities. See the MSDN article <a href="http://msdn.microsoft.com/library/en-us/dnaspp/html/aspnetusstan.asp" title="Building ASP.NET 2.0 Web Sites Using Web Standards">Building ASP.NET 2.0 Web Sites Using Web Standards</a>, which describes these capabilities<strong> .</strong></p>
 <strong>Given the above, the following analysis is based on running WSS 2.0 with .NET Framework 1.1 with Service Pack 1.</strong></p>
 <strong>Service Pack 1 includes patch 819945 </strong><a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;819945" title="FIX: ASP.NET Controls Do Not Meer Accessibility Guidelines">FIX: ASP.NET Controls Do Not Meet Accessibility Guidelines</a>
-
-
 4.1.1 Graphics</h3>
 1.1: Does each graphic have text to display as an alternative to the graphic?</p>
-
-
 <em>
-
 In HTML, use the ALT attribute with IMG and AREA SHAPE elements, and so forth. It is important to provide alternate text for graphics because some browsers and screen readers cannot interpret or display graphics properly.</em></p>
-
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
-
-
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 1.1_HTML_01, 1.1_HTML_07, 1.1_HTML_08</p>
 Type of criterion: development</p>
-
-
 Can be accomplished: Yes</p>
-
-Comments:
-WSS 2.0 and SPS 2003 can be used to create Web pages that satisfy this criterion. You can edit the page with Microsoft Office Front Page 2003 or the new Microsoft Office SharePoint Designer 2007 to take advantage of the tight integration between these products and technologies.</p>
-
+Comments: WSS 2.0 and SPS 2003 can be used to create Web pages that satisfy this criterion. You can edit the page with Microsoft Office Front Page 2003 or the new Microsoft Office SharePoint Designer 2007 to take advantage of the tight integration between these products and technologies.</p>
 Microsoft Office SharePoint Designer 2007 works with the same types of Web sites as Microsoft Office FrontPage 2003 in addition to the specific support of MOSS 2007 technologies (see chapter 
-
-Accessibility guidelines
-for using MOSS 2007 technologies for Web implementations). These include Web sites built on Windows SharePoint Services, disk-based Web sites, and Web sites built on FrontPage Server Extensions. Office SharePoint Designer 2007 can also open and edit Web sites directly with the File Transfer Protocol (FTP) and Web-based Distributed Authoring and Versioning (WebDAV) protocols.</p>
+Accessibility guidelines for using MOSS 2007 technologies for Web implementations). These include Web sites built on Windows SharePoint Services, disk-based Web sites, and Web sites built on FrontPage Server Extensions. Office SharePoint Designer 2007 can also open and edit Web sites directly with the File Transfer Protocol (FTP) and Web-based Distributed Authoring and Versioning (WebDAV) protocols.</p>
 The best approach is to set up a site definition that integrates this criterion as described in the MSDN article <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/odc_SP2003_ta/html/Office_SharePointAccessibility.asp" title="Tips for Enhancing the Accessibility of SharePoint Web Sites">Tips for Enhancing the Accessibility of SharePoint Web Sites</a>, in
 section &quot;Use Alternative Text for Images.&quot; This article illustrates how to use these products to create more accessible Web sites while waiting for some already-identified accessibility problems to be resolved in an upcoming release of Office.</p>
 HiSoftware offers a free download of <a href="http://www.hisoftware.com/spwhitepaper/sptmpreq.htm" title="nouveaux modles SharePoint ">new SharePoint templates</a> (in English), which you can use to create Web sites with integrated accessibility.</p>
 It remains the responsibility of SharePoint 2003 developers to ensure that their Web pages satisfy this criterion. However, using site definitions does not enable developers to manage all HTML rendering issues. It is possible to appropriately modify ASPX pages, such as default.aspx, that are integrated in the site definitions. However, this does not influence the standard SharePoint controls that might include the page under consideration. Some controls might need to be rewritten for the rendering to comply with all the relevant criteria. It might be necessary to produce new site definitions that contain new versions of certain SPS 2003 controls (browsing, for example).</p>
 1.2: Is the alternate text for each image relevant to the context in which the image is viewed?</p>
-
-
 A given image might have several meanings. It is the context of the image that determines the exact meaning. For example, a yellow bullet icon in a newspaper Web site should have the ALT attribute set to ALT=&quot;&quot; or ALT=&quot;*&quot;. However, if the same yellow bullet icon is included in a list of graphics that is available for download, it might make more sense to set the attribute to ALT = &quot;yellow diamond&quot; to distinguish it from other graphics available on the page.</p>
-
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
-
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 1.1_HTML_03</p>
 Type of criterion: development</p>
-
-
 Can be accomplished: Yes</p>
-
-Comments:
-See 1.1 in this section. This criterion is subjective.
+Comments: See 1.1 in this section. This criterion is subjective.
 </p>
-1.3:
-Are graphics that are used only for decorative purposes commented with ALT=&quot;&quot;?</p>
-
-
+1.3: Are graphics that are used only for decorative purposes commented with ALT=&quot;&quot;?</p>
 Some graphics have no informative value. An example is the use of transparent pixels only for layout purposes. However, all graphical elements must be commented. For this reason, graphics that are used only for decorative or layout purposes should be commented by setting the ALT attribute to null (in HTML, ALT=&quot;&quot;). Some browsers do not display the images that use this type of comment.</p>
-
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.1_HTML_02</p>
-Type
-of criterion: development</p>
-
-
-Can be accomplished: Yes</p>
-
-Comments:
-See 1.1 in this section.</p>
-1.4:
-Is the alternate text for each image no more than 60 characters long?</p>
-
-
-You
-should use a maximum of 60 characters in the ALT attribute because alternate text
-might bother some users. This is often the case for people who use a screen
-magnification function because of visual disabilities. It is important to limit
-the number of characters in the image comments so that such users can minimize
-the effort required to obtain all the information.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
-
-
-1.1</a>
-
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-
-
-Can be accomplished: Yes</p>
-
-Comments:
-See 1.1 in this section.</p>
-1.5:
-Are all comments that are linked to clickable areas of a MAP image relevant?</p>
-
-
-Definition:
-a MAP image is an image that presents clickable areas so that the user can
-click to select an option. When you use a MAP image in HTML (on the client or the
-server side), it is important to include alternate text for all clickable
-areas, as well as for the MAP image itself (that is, the image that contains
-the USEMAP or ISMAP attribute).</p>
-For a
-MAP image on the client side, provide alternate text by using the ALT attribute
-in each of the clickable areas (AREA SHAPE).</p>
-For a
-MAP image on the server side, provide redundant text links that repeat the
-content of each of the clickable areas.</p>
-Comment
-1: The alternate text provided for the image that contains the USEMAP or
-ISMAPattribute must not be null.</p>
-Comment
-2: It is recommended that MAP images be used on the client side rather than on
-the server side.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>, <a href="Point%20de%20contrle%201.1%20des%20WCAG%201.0%20http:/www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links" title="Point de contrle 1.2 des WCAG 1.0 ">1.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps" title="Point de contrle 9.1 des WCAG 1.0 ">9.1</a>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.1_HTML_03, 1.2_HTML_01, 9.1_HTML_01</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_02</p>
 Type of criterion: development</p>
 Can be accomplished: Yes</p>
-Comments:
-WSS 2.0 and SPS 2003 do not contain and cannot generate standard MAP images.</p>
+Comments: See 1.1 in this section.</p>
+1.4: Is the alternate text for each image no more than 60 characters long?</p>
+You should use a maximum of 60 characters in the ALT attribute because alternate text might bother some users. This is often the case for people who use a screen magnification function because of visual disabilities. It is important to limit the number of characters in the image comments so that such users can minimize the effort required to obtain all the information.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: development</p>
+Can be accomplished: Yes</p>
+Comments: See 1.1 in this section.</p>
+1.5: Are all comments that are linked to clickable areas of a MAP image relevant?</p>
+Definition: a MAP image is an image that presents clickable areas so that the user can click to select an option. When you use a MAP image in HTML (on the client or the server side), it is important to include alternate text for all clickable areas, as well as for the MAP image itself (that is, the image that contains the USEMAP or ISMAP attribute).</p>
+For a MAP image on the client side, provide alternate text by using the ALT attribute in each of the clickable areas (AREA SHAPE).</p>
+For a MAP image on the server side, provide redundant text links that repeat the content of each of the clickable areas.</p>
+Comment 1: The alternate text provided for the image that contains the USEMAP or ISMAPattribute must not be null.</p>
+Comment 2: It is recommended that MAP images be used on the client side rather than on the server side.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>, <a href="Point%20de%20contrle%201.1%20des%20WCAG%201.0%20http:/www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links" title="Point de contrle 1.2 des WCAG 1.0 ">1.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps" title="Point de contrle 9.1 des WCAG 1.0 ">9.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_03, 1.2_HTML_01, 9.1_HTML_01</p>
+Type of criterion: development</p>
+Can be accomplished: Yes</p>
+Comments: WSS 2.0 and SPS 2003 do not contain and cannot generate standard MAP images.</p>
 It remains the responsibility of SharePoint 2003 developers, when creating templates that use this feature, to ensure that their Web pages satisfy this criterion. The solution is to systematically fill in the ALT attribute that is associated with the tag containing the USEMAP attribute (in addition to the images). Each clickable area (AREA SHAPE attribute) must include an appropriate ALT attribute.</p>
 1.6: Is the alternate content for each text image at least the equivalent of the text appearing in the image?</p>
 It is not recommended that you present text in the form of an image. However, if there is an unavoidable graphical constraint (for example, non-equivalent CSS rendering), the alternate text for a graphical element containing text should, at minimum, present the exact content of the text itself. The alternate text can provide additional information, but it must at least provide the exact content.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-
-UWEM
-1.0 Test(s): 1.1_HTML_03</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_03</p>
 Type of criterion: development</p>
 Can be accomplished: Yes</p>
-Comments:
-See 1.1 in this section.</p>
-1.7:
-Do all images that require a detailed description provide comment text?</p>
+Comments: See 1.1 in this section.</p>
+1.7: Do all images that require a detailed description provide comment text?</p>
 When a graphical element requires a long description in HTML (for example, a complex image or alternate text longer than 60 characters) a text comment must be provided. The comment can be a link to a descriptive file (for example, a D-link or a clickable graphic), a caption that appears directly on the page, or a LONGDESC attribute.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.1_HTML_05</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_05</p>
 Type of criterion: development</p>
 Can be accomplished: Yes</p>
-
-Comments:
-WSS 2.0 and SPS 2003 can be used to create Web pages that satisfy this criterion. The LONGDESC attribute can be added by using FrontPage 2003 to edit the page. The best approach is to create a site definition that integrates this criterion.</p>
-
-
+Comments: WSS 2.0 and SPS 2003 can be used to create Web pages that satisfy this criterion. The LONGDESC attribute can be added by using FrontPage 2003 to edit the page. The best approach is to create a site definition that integrates this criterion.</p>
 The WCAG directive specifies that the LONGDESC attribute should be used, but currently most browsers do not support it. Internet Explorer 6.0 exposes this attribute from a programming point of view in its model object. Therefore, assistive technologies can make use of it. <a href="http://www.hackcraft.net/longdesclink/default.asp" title="Longdesc Linker for Internet Explorer 6">Longdesc Linker for Internet Explorer 6</a> is a free downloadable ActiveX component that makes it possible to add a Long Description element to the context menu used by Internet Explorer for images. This element is enabled if the selected image has a LONGDESC link. If the user selects the link (by holding down the SHIFT key while selecting), Internet Explorer follows it.</p>
 1.8:
 If a detailed description is provided for an image, is the content relevant?</p>
-
 The content should provide additional information to the description defined in the ALT attribute for the image.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
-
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-
 UWEM 1.0 Test(s): 1.1_HTML_04</p>
 Type of criterion: development</p>
 Can be accomplished: Yes</p>
 Comments:
 See 1.7 in this section. This criterion is subjective.</p>
-1.9:
-Does the text used in the ALT attribute for each image provide the function of
-the link?</p>
-
-
-The
-image description is not always in keeping with the function of the link. For
-example, if an arrow is used to indicate a link, use ALT=&quot;Next&quot;
-instead of ALT=&quot;Right Arrow&quot;. Avoid using ALT=&quot;&quot;, which
-provides no information about the function of the link.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-
-
-13.1</a>
-
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.1_HTML_02</p>
-Type
-of criterion: development</p>
-
-
+1.9: Does the text used in the ALT attribute for each image provide the function of the link?</p>
+The image description is not always in keeping with the function of the link. For example, if an arrow is used to indicate a link, use ALT=&quot;Next&quot; instead of ALT=&quot;Right Arrow&quot;. Avoid using ALT=&quot;&quot;, which provides no information about the function of the link.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.1_HTML_02</p>
+Type of criterion: development</p>
 Can be accomplished: Yes</p>
-
-Comments:
-WSS 2.0 and SPS 2003 can be used to create Web pages that
-satisfy this criterion. The solution is to place an ALT attribute between the
-&lt;IMG&gt; tags embedded in an &lt;A&gt; tag, making sure that the text is
-relevant.</p>
-
-It remains the
-responsibility of SharePoint 2003 developers to ensure that their Web pages
-satisfy this criterion.</p>
-
+Comments: WSS 2.0 and SPS 2003 can be used to create Web pages that satisfy this criterion. The solution is to place an ALT attribute between the &lt;IMG&gt; tags embedded in an &lt;A&gt; tag, making sure that the text is relevant.</p>
+It remains the responsibility of SharePoint 2003 developers to ensure that their Web pages satisfy this criterion.</p>
 4.1.2
  Frames</h3>
-2.1:
-Does each frame have a NAME attribute?</p>
-
-
-In
-HTML, each frame must be named by using the NAME attribute. Browsing through
-frame-based Web pages can be complex, especially for visually impaired people
-who become familiar with site content frame by frame (whereas sighted people
-have an overview of the entire site). Comment: The content of the NAME
-attribute should not include any spaces.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-
-
-12.1</a>
-
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-
-
+2.1: Does each frame have a NAME attribute?</p>
+In HTML, each frame must be named by using the NAME attribute. Browsing through frame-based Web pages can be complex, especially for visually impaired people who become familiar with site content frame by frame (whereas sighted people have an overview of the entire site). Comment: The content of the NAME attribute should not include any spaces.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: development</p>
 Can be accomplished: N/A (default) / Yes</p>
-
-Comments:
-WSS 2.0 and SPS 2003 are not frame-based by default.
-However, it is possible to create pages that have frames. It remains the
-responsibility of SharePoint 2003 developers to ensure that their Web pages
-satisfy this criterion.</p>
-2.2:
-Are the names assigned to frames relevant?</p>
-
-
-The names
-assigned to frames should be relevant. Avoid naming frames with directional
-data, such as &quot;Left,&quot; &quot;Right,&quot; or &quot;Middle.&quot; It is
-better to name frames with explicit names that refer to the function provided
-by the frame, such as &quot;Menu,&quot; &quot;Navigation,&quot; or
-&quot;Content.&quot;</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-
-
-12.1</a>
-
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-
-Can
-be accomplished: N/A (default) / Yes</p>
-
-Comments:
-See 2.1 in this section.</p>
+Comments: WSS 2.0 and SPS 2003 are not frame-based by default. However, it is possible to create pages that have frames. It remains the responsibility of SharePoint 2003 developers to ensure that their Web pages satisfy this criterion.</p>
+2.2: Are the names assigned to frames relevant?</p>
+The names assigned to frames should be relevant. Avoid naming frames with directional data, such as &quot;Left,&quot; &quot;Right,&quot; or &quot;Middle.&quot; It is better to name frames with explicit names that refer to the function provided by the frame, such as &quot;Menu,&quot; &quot;Navigation,&quot; or &quot;Content.&quot;</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: development</p>
+Can be accomplished: N/A (default) / Yes</p>
+Comments: See 2.1 in this section.</p>
 2.3: Is there a NOFRAME tag?</p>
 In HTML, the NOFRAME tag is used to provide the user with a summary of the main links on the Web site. This tag facilitates browsing for browsers that do not handle frames.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
@@ -466,7 +257,6 @@ Comments: This criterion requires the use a tool such as <a href="http://www.his
 HiSoftware, which is a Synchronized Multimedia Integration Language (SMIL) presentation editor, or Microsoft Synchronized Accessible Media Interchange (SAMI). Please refer to the technical articles <a href="http://msdn.microsoft.com/library/en-us/dnacc/html/atg_samiarticle.asp" title="Understanding SAMI 1.0">Understanding SAMI 1.0</a> and <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp" title="Adding Closed Captions to Digital Media">Adding Closed Captions to Digital Media</a> <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp" title="Adding Closed Captions to Digital Media">for addition information about how to add subtitle tracks to the Windows Media format.</a></p>
 You might want to refer to <a href="http://www.hisoftware.com/hmcc/hmmc-paper.htm" title="Creating Accessible Multimedia Demos with HiSoftware AccVerify, Hi-Caption, Microsoft PowerPoint and Microsoft Producer">style='font-size:10.0pt;HiSoftware Hi-Caption Studio - Creating Accessible Demos</a> as an illustration.</p>
 It remains the responsibility of SharePoint 2003 developers to ensure that their multimedia content satisfies this criterion.</p>
-
 4.1.5
  Tables</h3>
 5.1: Is the SUMMARY attribute present and relevant?</p>
