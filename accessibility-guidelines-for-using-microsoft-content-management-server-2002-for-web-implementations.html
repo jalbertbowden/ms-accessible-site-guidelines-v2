@@ -8,49 +8,39 @@
   </head>
   <body>
     <div class="content">
-      <header role="banner"><h1 class="headerbanner">mg class="headerbannerlogo" src="a/i/ms-logo-216x74.gif" height="50" alt="Microsoft" /></h1></header>
+      <header role="banner"><h1 class="headerbanner"><img class="headerbannerlogo" src="a/i/ms-logo-216x74.gif" height="50" alt="Microsoft" /></h1></header>
       <div class="main" role="main">
         <article role="article">
           <section role="region">
             <h1>Accessibility Guidelines for Using Microsoft Content Management Server 2002 for Web implementations</h1>
-Microsoft Content Management Server (MCMS) 2002 is a Web content management solution that provides a full range of dynamic and customizable features for implementing Internet, intranet, and extranet Web sites. For example, you can do the following by using MCMS:</p>
-Build dynamic and scalable Web sites that use MCMScontrols (based on the MCMS guidelines) by using the power of the Visual Studio2005 development environment <a href="#_ftn8" name="_ftnref8" title="">[8]</a> (and, in part, ASP.NET 2.0 technology <a href="#_ftn9" name="_ftnref9" title="">[9]</a>), Microsoft SQL Server 2005 <a href="#_ftn10" name="_ftnref10" title="">[10]</a>, and standards such as SOAP and XML.</p>
-Deploy Web sites and Web content from one server to another by means of a flexible and extendable content object packaging mechanism that uses XML.</p>
-Enable users who have a minimal understanding of the technical aspects of Web site development to create, modify, publish, and manage their own content by using user-friendly tools that are based on an Internet browser or Microsoft Word.</p>
-Enable authorized content creators to create or modify multiple parts of a single Web site simultaneously by separating content from format.</p>
-For maximum flexibility, MCMS stores content in XML, HTML, and binary objects in a Microsoft SQL Server repository. Content is thus managed separately from design elements or templates that are used to produce the Web site. Web site templates (ASPX, ASP, or ASCX source files) can be used to define the overall appearance for a set of pages in a MCMS Web site and can contain executable code.</p>
-These templates and the executable code are stored at the file system level, and can be managed by using a source code management system, such as Microsoft Visual Source Safe or Microsoft Visual Studio Team System (Team Foundation Source Control).</p>
-Because MCMS integrates code dynamically in a Web site through template objects, Web pages can be produced and published dynamically. In this way, content can be customized as a function of user profile and behavior, Internet browser, or default language. Managing objects separately makes it possible to rapidly adapt content as a function of a variety of applications employed by the organization and outside partners.</p>
-Lastly, a connector, the
-Microsoft Content Management Server 2002 Connector for SharePoint Technologies, makes it possible to integrate SharePoint technologies (see chapter 3 &quot;
-Accessibility guidelines for using SharePoint 2003 technologies for Web implementations
-&quot;) with MCMS 2002 to provide an end-to-end solution for document publication.</p>
-For additional information about MCMS, see <a href="http://www.microsoft.com/cmserver/default.mspx">http://www.microsoft.com/cmserver/default.mspx</a>.</p>
-<a name="_Toc155936363">3.1 Evaluation of MCMS 2002 Web sites for WCAG 1.0 checkpoints</a></h2>
-This white paper evaluates the use of MCMS for creating Web sites that comply with the priority 1 checkpoints defined for the <a href="http://www.w3.org/TR/WAI-WEBCONTENT/#Guidelines">14 guidelines in the Web Content Accessibility Guidelines (WCAG) 1.0</a>, which were developed by the W3C/WAI and published 5 May 1999 (see section 1.3.1 &quot;WCAG 1.0&quot;). Sometime after WCAG 2.0 is approved and released, a future version of this document will evaluate compliance with the guidelines in the new release.</p>
-To evaluate the use of MCMS 2002 for creating compliant Web sites, this document considers the following two areas:</p>
-Template creation by using a template designer. This area includes the browsing mechanisms that are set up for the Web site.</p>
-Content, that is created by users who have been granted appropriate author or editor permissions. The Web content is created for each page by using placeholders.</p>
-MCMS 2002 is evaluated for each checkpoint with respect to its content authoring tools (as they exist without development) and, if applicable, the possibility of workarounds to comply with the checkpoints.</p>
-As mentioned in the introduction, this assessment takes into consideration the <a href="http://download.microsoft.com/download/c/2/3/c23bc250-5f80-4d0c-a29d-877355ff91e8/Content_Management_Server_2002_VPAT.doc" title="VPAT de MCMS 2002">Voluntary Product Accessibility Template (VPAT) for MCMS 2002</a>.</p>
-The MCMS 2002 release examined is the latest available as of the publication date of this white paper: Microsoft Content Management Server 2002 with Service Pack 2.</p>
-<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3de1e8f0-d660-4a2b-8b14-0fce961e56fb&amp;DisplayLang=en" title="MCMS 2002 Service Pack 2">Service Pack 2</a> requires prior installation of <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=62049d3f-24d7-4463-a924-550e5dc34095&amp;DisplayLang=en" title="MCMS 2002 Service Pack 1a">Service Pack 1a</a>, which in turn requires prior installation of <a href="http://www.microsoft.com/downloads/details.aspx?familyid=FAC6350C-8AD6-4BCA-8860-8A6AE3F64448&amp;displaylang=en" title="Internet Explorer Web Controls for Content Management Server 2002 with Service Pack 1a">Internet Explorer Web Controls for Content Management Server 2002 with Service Pack 1a</a>. We suggest that you begin by reading the following articles:</p>
-<a href="http://support.microsoft.com/default.aspx?id=906145" title="Content Management Server 2002 Service Pack 2 installation information">Content Management Server 2002 Service Pack 2 installation information</a></p>
-<a
-href="http://www.mcmsfaq.com/articles/sp2install.asp"
-title="Rational Guide to installing MCMS 2002 Service Pack 2">
-Rational Guide to installing MCMS 2002
-Service Pack 2</a>
-</p>
-MCMS 2002 Service Pack 2 supports .NET Framework 2.0 and the Visual Studio 2005 development environment. It should be noted that Visual Studio can be used to develop XHTML-compliant templates that are automatically validated during the design process.</p>
-By default, Visual Studio 2005 is configured to check Web pages for Internet Explorer 6.0 requirements. If you wish to check Web pages for a specific XHTML scheme, you need to select one of the XHTML schemes by selecting Tools
-Options Validation.</p>
-Validation errors, such as unclosed statements, are indicated in the Source view by a red wavy line under the content where the problem occurs. Syntax errors, such as the use of an obsolete marker, are underlined with a green wavy line. Explanatory tips are displayed when the mouse pointer hovers over a syntax error. These messages can also be displayed in the error list ( View Other Windows Error List).</p>
-By using the new Accessibility Validation tool in Visual Studio 2005, you can validate your Web pages against several different accessibility standards. Access the tool by selecting  Tools Check Accessibility. You can use this function to validate your Web pages against WCAG Priorities 1 and 2 and Section 508 directives. You can also display the validation results in the error list.</p>
-See the MSDN article <a href="http://msdn.microsoft.com/library/en-us/dnaspp/html/aspnetusstan.asp" title="Building ASP.NET 2.0 Web Sites Using Web Standards">Building ASP.NET 2.0 Web Sites Using WebStandards</a>, which describes these features in detail.</p>
-3.1.1
- Graphics</h3>
-1.1: Does each graphic have text to display as an alternative to the graphic?</p>
+            <p>Microsoft Content Management Server (MCMS) 2002 is a Web content management solution that provides a full range of dynamic and customizable features for implementing Internet, intranet, and extranet Web sites. For example, you can do the following by using MCMS:</p>
+            <p>Build dynamic and scalable Web sites that use MCMScontrols (based on the MCMS guidelines) by using the power of the Visual Studio2005 development environment <a href="#_ftn8" name="_ftnref8" title="">[8]</a> (and, in part, ASP.NET 2.0 technology <a href="#_ftn9" name="_ftnref9" title="">[9]</a>), Microsoft SQL Server 2005 <a href="#_ftn10" name="_ftnref10" title="">[10]</a>, and standards such as SOAP and XML.</p>
+            <p>Deploy Web sites and Web content from one server to another by means of a flexible and extendable content object packaging mechanism that uses XML.</p>
+            <p>Enable users who have a minimal understanding of the technical aspects of Web site development to create, modify, publish, and manage their own content by using user-friendly tools that are based on an Internet browser or Microsoft Word.</p>
+            <p>Enable authorized content creators to create or modify multiple parts of a single Web site simultaneously by separating content from format.</p>
+            <p>For maximum flexibility, MCMS stores content in XML, HTML, and binary objects in a Microsoft SQL Server repository. Content is thus managed separately from design elements or templates that are used to produce the Web site. Web site templates (ASPX, ASP, or ASCX source files) can be used to define the overall appearance for a set of pages in a MCMS Web site and can contain executable code.</p>
+            <p>These templates and the executable code are stored at the file system level, and can be managed by using a source code management system, such as Microsoft Visual Source Safe or Microsoft Visual Studio Team System (Team Foundation Source Control).</p>
+            <p>Because MCMS integrates code dynamically in a Web site through template objects, Web pages can be produced and published dynamically. In this way, content can be customized as a function of user profile and behavior, Internet browser, or default language. Managing objects separately makes it possible to rapidly adapt content as a function of a variety of applications employed by the organization and outside partners.</p>
+            <p>Lastly, a connector, theMicrosoft Content Management Server 2002 Connector for SharePoint Technologies, makes it possible to integrate SharePoint technologies (see chapter 3 &quot; Accessibility guidelines for using SharePoint 2003 technologies for Web implementations &quot;) with MCMS 2002 to provide an end-to-end solution for document publication.</p>
+            <p>For additional information about MCMS, see <a href="http://www.microsoft.com/cmserver/default.mspx">http://www.microsoft.com/cmserver/default.mspx</a>.</p>
+            <h2>3.1 Evaluation of MCMS 2002 Web sites for WCAG 1.0 checkpoints</a></h2>
+            <p>This white paper evaluates the use of MCMS for creating Web sites that comply with the priority 1 checkpoints defined for the <a href="http://www.w3.org/TR/WAI-WEBCONTENT/#Guidelines">14 guidelines in the Web Content Accessibility Guidelines (WCAG) 1.0</a>, which were developed by the W3C/WAI and published 5 May 1999 (see section 1.3.1 &quot;WCAG 1.0&quot;). Sometime after WCAG 2.0 is approved and released, a future version of this document will evaluate compliance with the guidelines in the new release.</p>
+            <p>To evaluate the use of MCMS 2002 for creating compliant Web sites, this document considers the following two areas:</p>
+            <p>Template creation by using a template designer. This area includes the browsing mechanisms that are set up for the Web site.</p>
+            <p>Content, that is created by users who have been granted appropriate author or editor permissions. The Web content is created for each page by using placeholders.</p>
+            <p>MCMS 2002 is evaluated for each checkpoint with respect to its content authoring tools (as they exist without development) and, if applicable, the possibility of workarounds to comply with the checkpoints.</p>
+            <p>As mentioned in the introduction, this assessment takes into consideration the <a href="http://download.microsoft.com/download/c/2/3/c23bc250-5f80-4d0c-a29d-877355ff91e8/Content_Management_Server_2002_VPAT.doc" title="VPAT de MCMS 2002">Voluntary Product Accessibility Template (VPAT) for MCMS 2002</a>.</p>
+            <p>The MCMS 2002 release examined is the latest available as of the publication date of this white paper: Microsoft Content Management Server 2002 with Service Pack 2.</p>
+            <p><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3de1e8f0-d660-4a2b-8b14-0fce961e56fb&amp;DisplayLang=en" title="MCMS 2002 Service Pack 2">Service Pack 2</a> requires prior installation of <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=62049d3f-24d7-4463-a924-550e5dc34095&amp;DisplayLang=en" title="MCMS 2002 Service Pack 1a">Service Pack 1a</a>, which in turn requires prior installation of <a href="http://www.microsoft.com/downloads/details.aspx?familyid=FAC6350C-8AD6-4BCA-8860-8A6AE3F64448&amp;displaylang=en" title="Internet Explorer Web Controls for Content Management Server 2002 with Service Pack 1a">Internet Explorer Web Controls for Content Management Server 2002 with Service Pack 1a</a>. We suggest that you begin by reading the following articles:</p>
+            <p><a href="http://support.microsoft.com/default.aspx?id=906145" title="Content Management Server 2002 Service Pack 2 installation information">Content Management Server 2002 Service Pack 2 installation information</a></p>
+            <p><a href="http://www.mcmsfaq.com/articles/sp2install.asp" title="Rational Guide to installing MCMS 2002 Service Pack 2">Rational Guide to installing MCMS 2002 Service Pack 2</a></p>
+            <p>MCMS 2002 Service Pack 2 supports .NET Framework 2.0 and the Visual Studio 2005 development environment. It should be noted that Visual Studio can be used to develop XHTML-compliant templates that are automatically validated during the design process.</p>
+            <p>By default, Visual Studio 2005 is configured to check Web pages for Internet Explorer 6.0 requirements. If you wish to check Web pages for a specific XHTML scheme, you need to select one of the XHTML schemes by selecting Tools Options Validation.</p>
+            <p>Validation errors, such as unclosed statements, are indicated in the Source view by a red wavy line under the content where the problem occurs. Syntax errors, such as the use of an obsolete marker, are underlined with a green wavy line. Explanatory tips are displayed when the mouse pointer hovers over a syntax error. These messages can also be displayed in the error list ( View Other Windows Error List).</p>
+            <p>By using the new Accessibility Validation tool in Visual Studio 2005, you can validate your Web pages against several different accessibility standards. Access the tool by selecting  Tools Check Accessibility. You can use this function to validate your Web pages against WCAG Priorities 1 and 2 and Section 508 directives. You can also display the validation results in the error list.</p>
+            <p>See the MSDN article <a href="http://msdn.microsoft.com/library/en-us/dnaspp/html/aspnetusstan.asp" title="Building ASP.NET 2.0 Web Sites Using Web Standards">Building ASP.NET 2.0 Web Sites Using WebStandards</a>, which describes these features in detail.</p>
+            <h3>3.1.1 Graphics</h3>
+            <p>1.1: Does each graphic have text to display as an alternative to the graphic?</p>
 In HTML, use the ALT attribute with IMG and AREA SHAPE elements, and so forth. It is important to provide alternate text for graphics because some browsers and screen readers cannot interpret or display graphics properly.</em></p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
@@ -58,7 +48,7 @@ WCAG 1.0 checkpoint(s)
 [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 1.1_HTML_01, 1.1_HTML_07, 1.1_HTML_08</p>
-Type of criterion: development</p>
+Type of criterion: development</p> 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
@@ -66,157 +56,81 @@ The  ImagePlaceholder control that is available in the standard version of MCMS 
 Similarly, the HTMLPlaceholder control that is available in the standard version of MCMS 2002 enables content authors to insert images that also can have an ALT attribute. It is the responsibility of Web masters and content authors to ensure that their Web pages comply with this checkpoint.</p>
 1.2: Is the alternate text for each image relevant to the context in which the image is viewed?</p>
 A given image might have several meanings. It is the context of the image that determines the exact meaning. For example, a yellow bullet icon in a newspaper Web site should have the ALT attribute set to ALT=&quot;&quot; or ALT=&quot;*&quot;. However, if the same yellow bullet icon is included in a list of graphics that is available for download, it might make more sense to set the attribute to ALT = &quot;yellow diamond&quot; to distinguish it from other graphics available on the page.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
-1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s)
 [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 1.1_HTML_03</p>
-Type of criterion:
-development</p>
-Can
-be accomplished by using templates: Yes</p>
-Can
-be accomplished by using author content: Yes</p>
+Type of criterion: development</p>
+
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
 Comments:
 See 1.1 in this section. This criterion is subjective.</p>
 1.3:
 Are graphics that are used only for decorative purposes commented with
 ALT=&quot;&quot;?</p>
-Some
-graphics have no informative value. An example is the use of transparent pixels
-only for layout purposes. However, all graphical elements must be commented.
-For this reason, graphics that are used only for decorative or layout purposes
-should be commented by setting the ALT attribute to null (in HTML,
-ALT=&quot;&quot;). Some browsers do not display the images that use this type
-of comment.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
-1.1</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+Some graphics have no informative value. An example is the use of transparent pixels only for layout purposes. However, all graphical elements must be commented. For this reason, graphics that are used only for decorative or layout purposes should be commented by setting the ALT attribute to null (in HTML, ALT=&quot;&quot;). Some browsers do not display the images that use this type of comment.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s)
 [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 1.1_HTML_02</p>
-Type of criterion:
-development</p>
-Can
-be accomplished by using templates: Yes</p>
-Can
-be accomplished by using author content: Yes</p>
+Type of criterion: development</p> 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
 Comments:
 See 1.1 in this section.</p>
 1.4:
 Is the alternate text for each image no more than 60 characters long?</p>
-You
-should use a maximum of 60 characters in the ALT attribute because alternate
-text might bother some users. This is often the case for people who use a
-screen magnification function because of visual disabilities. It is important
-to limit the number of characters in the image comments so that such users can
-minimize the effort required to obtain all the information.</p>
+You should use a maximum of 60 characters in the ALT attribute because alternate text might bother some users. This is often the case for people who use a screen magnification function because of visual disabilities. It is important to limit the number of characters in the image comments so that such users can minimize the effort required to obtain all the information.</p>
 
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 
-
-1.1</a>
-
-
-</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-
-<p class=CriteriaRefW3C style=' 
-
-
+<p>
 WCAG 1.0 checkpoint(s)
 [Priority 3]: -</p>
 UWEM
 1.0 Test(s): -</p>
 
-<p class=CriteriaRefW3C style=' 
 
 
-Type of criterion:
-development</p>
+
+Type of criterion: development</p>
 
 
-Can
-be accomplished by using templates: Yes</p>
 
-<p class=CriteriaRefW3C style='margin-left:63.35pt;Can
-be accomplished by using author content: Yes</p>
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
 
-<p class=CriteriaRefW3C style=' Comments:
+Comments:
 See 1.1 in this section.</p>
 1.5:
 Are all comments that are linked to clickable areas of a MAP image relevant?</p>
 Definition:
-A MAP image is an image that presents clickable areas so that the user can
-click to select an option. When you use a MAP image in HTML (on the client or the
-server side), it is important to include alternate text for all clickable
-areas, as well as for the MAP image itself (that is, the image that contains
-the USEMAP or ISMAP attribute).</p>
-For a
-MAP image on the client side, provide alternate text by using the ALT attribute
-in each of the clickable areas (AREA SHAPE).</p>
-For a
-MAP image on the server side, provide redundant text links that repeat the
-content of each of the clickable areas.</p>
+A MAP image is an image that presents clickable areas so that the user can click to select an option. When you use a MAP image in HTML (on the client or the server side), it is important to include alternate text for all clickable areas, as well as for the MAP image itself (that is, the image that contains the USEMAP or ISMAP attribute).</p>
+For a MAP image on the client side, provide alternate text by using the ALT attribute in each of the clickable areas (AREA SHAPE).</p>
+For a MAP image on the server side, provide redundant text links that repeat the content of each of the clickable areas.</p>
 Comment
-1: The alternate text provided for the image that contains the USEMAP or
-ISMAPattribute must not be null.</p>
+1: The alternate text provided for the image that contains the USEMAP or ISMAPattribute must not be null.</p>
 Comment
-2: It is recommended that MAP images be used on the client side rather than on
-the server side.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
-1.1</a>
-, <a
-href="http://www.w3.org/TR/WCAG10-TECHS/#tech-redundant-server-links"
-title="Point de contrle 1.2 des WCAG 1.0 ">
-1.2</a>
-, <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps"
-title="Point de contrle 9.1 des WCAG 1.0 ">
+2: It is recommended that MAP images be used on the client side rather than on the server side.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>, <a href="http://www.w3.org/TR/WCAG10-TECHS/#tech-redundant-server-links" title="Point de contrle 1.2 des WCAG 1.0 ">1.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps" title="Point de contrle 9.1 des WCAG 1.0 ">9.1</a></p>
+
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.1_HTML_03, 1.2_HTML_01, 9.1_HTML_01</p>
+Type of criterion: 
 
 
-9.1</a>
-
-
-</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.1_HTML_03, 1.2_HTML_01, 9.1_HTML_01</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
 
-style='color:black'>Content authors cannot create map images on the
+Content authors cannot create map images on the
 client or server side by using the standard publishing controls in MCMS 2002.</p>
 1.6:
 Is the alternate content for each text image at least the equivalent of the
@@ -233,12 +147,10 @@ WCAG 1.0 checkpoint(s)
 [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 1.1_HTML_03</p>
-Type of criterion:
-development</p>
-Can
-be accomplished by using templates: Yes</p>
-Can
-be accomplished by using author content: Yes</p>
+Type of criterion: development</p>
+
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
 Comments:
 See 1.1 in this section.</p>
 1.7:
@@ -251,273 +163,124 @@ title="Point de contrle 1.1 des WCAG 1.0 ">
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 1.1_HTML_05</p>
-Type of criterion: development</p>
+Type of criterion: development</p> 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments:
 Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
-The 
-ImagePlaceholder and 
-HTMLPlaceholder controls that are provided in the standard version of MCMS 2002 do not support the use of the LONGDESC attribute.</p>
+The ImagePlaceholder and HTMLPlaceholder controls that are provided in the standard version of MCMS 2002 do not support the use of the LONGDESC attribute.</p>
 The controls can be modified to support this feature.</p>
 Another possible approach is to use a WYSIWYG content editor control instead. <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition"> The r.a.d.editor Lite Edition</a>, developed by Telerik and available without additional cost for all MCMS 2002 clients , makes it possible to create and manage rich, accessible HTML content. The content generated by r.a.d.editor is accessible if the author fills in all the required fields (identified by a special accessibility icon). Any content element that is more complex than simple text provides accessibility fields that support a complete description, including long description support.</p>
 It should be noted that this software publisher also offers a full range of controls for MCMS 2002. These controls are available in the <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2341" title="r.a.d.controls suite MCMS Edition"> r.a.d.controls suite MCMS Edition</a>. This suite offers, in addition to other features, the <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2357" title="r.a.d.editor Premium Edition"> r.a.d.editor Premium Edition</a> control, which is an extended version of the control mentioned above.</p>
 It is the responsibility of Web masters and content authors to ensure that their Web pages comply with this checkpoint.</p>
 The WCAG directive specifies that the LONGDESC attribute should be used, but currently most browsers do not support this attribute. Internet Explorer 6.0 exposes this attribute from a programming point of view in its object model. Assistive technologies might thus make use of this feature. <a href="http://www.hackcraft.net/longdesclink/default.asp" title="Longdesc Linker for Internet Explorer 6">Longdesc Linker for Internet Explorer 6</a> is a free downloadable ActiveX component that makes it possible to add a Long Description element to the context menu used by Internet Explorer for images. This element is enabled if the selected image has a LONGDESC link. If the user selects the link (by holding down the SHIFT key while selecting), Internet Explorer follows it.</p>
-1.8:
-If a detailed description is provided for an image, is the content relevant?</p>
-The
-content should provide additional information to the description defined in the
-ALT attribute for the image.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent"
-title="Point de contrle 1.1 des WCAG 1.0 ">
-
-
-1.1</a>
+1.8: If a detailed description is provided for an image, is the content relevant?</p>
+The content should provide additional information to the description defined in the ALT attribute for the image.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent" title="Point de contrle 1.1 des WCAG 1.0 ">1.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 1.1_HTML_04</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-Comments:
-See 1.7 in this section. This criterion is subjective.
+Comments: See 1.7 in this section. This criterion is subjective.
 1.9:
-Does the text used in the ALT attribute for each image provide the function of
-the link?</p>
-The
-image description is not always in keeping with the function of the link. For
-example, if an arrow is used to indicate a link, use ALT=&quot;Next&quot;
-instead of ALT=&quot;Right Arrow&quot;. Avoid using ALT=&quot;&quot;, which
-provides no information about the function of the link.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]:</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -<a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-
-
-13.1</a>
-
-
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): <a
-href="http://www.accessiweb.org/fr/uwem/reco13.html#test_13.1_html_02"
-title="Test 13.1_HTML_02 de UWEM 1.0">
-
-
- 
-color:#666699;text-decoration:none;text-underline:none'>13.1_HTML_02</a>
-
-
-</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+Does the text used in the ALT attribute for each image provide the function of the link?</p>
+The image description is not always in keeping with the function of the link. For example, if an arrow is used to indicate a link, use ALT=&quot;Next&quot; instead of ALT=&quot;Right Arrow&quot;. Avoid using ALT=&quot;&quot;, which provides no information about the function of the link.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]:</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -<a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): <a href="http://www.accessiweb.org/fr/uwem/reco13.html#test_13.1_html_02" title="Test 13.1_HTML_02 de UWEM 1.0">13.1_HTML_02</a></p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-
-Comments:
-See 1.1 in this section.</p>
-
-<h3 style='page-break-after:auto;mso-list:l18 level3 lfo5'>3.1.2
- Frames</h3>
-2.1:
-Does each frame have a NAME attribute?</p>
-In
-HTML, each frame must be named by using the NAME attribute. Browsing through
-frame-based Web pages can be complex, especially for visually impaired people
-who become familiar with site content frame by frame (whereas sighted people
-have an overview of the entire site). Comment: the content of the NAME
-attribute should not include any spaces.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-12.1</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+Comments: See 1.1 in this section.</p>
+3.1.2 Frames</h3>
+2.1: Does each frame have a NAME attribute?</p>
+In HTML, each frame must be named by using the NAME attribute. Browsing through frame-based Web pages can be complex, especially for visually impaired people who become familiar with site content frame by frame (whereas sighted people have an overview of the entire site). Comment: the content of the NAME attribute should not include any spaces.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a> WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM
 1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-We do not recommend
-the use of frames in templates. If, however, frames are used, the Frameset
-Document Type Definition (DTD) for XHTML 1.0 should be used (see 8.1 under
-&quot;Mandatory elements&quot;).</p>
-Content authors
-cannot manipulate frames in MCMS 2002.</p>
+Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion.
+It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+We do not recommend the use of frames in templates. If, however, frames are used, the Frameset Document Type Definition (DTD) for XHTML 1.0 should be used (see 8.1 under &quot;Mandatory elements&quot;).</p>
+Content authors cannot manipulate frames in MCMS 2002.</p>
 2.2:
 Are the names assigned to frames relevant?</p>
-The
-names assigned to frames should be relevant. Avoid naming frames with directional
-data, such as &quot;Left,&quot; &quot;Right,&quot; or &quot;Middle.&quot; It is
-better to name frames with explicit names that refer to the function provided
-by the frame, such as &quot;Menu,&quot; &quot;Navigation,&quot; or
-&quot;Content.&quot;</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-12.1</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+The names assigned to frames should be relevant. Avoid naming frames with directional data, such as &quot;Left,&quot; &quot;Right,&quot; or &quot;Middle.&quot; It is better to name frames with explicit names that refer to the function provided by the frame, such as &quot;Menu,&quot; &quot;Navigation,&quot; or &quot;Content.&quot;</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a> WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
-See 2.1 in this section.</p>
-2.3:
-Is there a NOFRAME tag?</p>
-In
-HTML, the NOFRAME tag is used to provide the user with a summary of the main
-links on the Web site. This tag facilitates browsing for browsers that do not
-handle frames.</p>
+Comments: See 2.1 in this section.</p>
+2.3: Is there a NOFRAME tag?</p>
+In HTML, the NOFRAME tag is used to provide the user with a summary of the main links on the Web site. This tag facilitates browsing for browsers that do not handle frames.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page"
-title="Point de contrle 6.5 des WCAG 1.0 ">
-6.5</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">6.5</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 6.5_HTML_02</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): 6.5_HTML_02</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments:
 See 2.1 in this section.</p>
 2.4:
 Is the content of the NOFRAME tag relevant?</p>
-If a
-NOFRAME tag is present, the information in the tag must be relevant. In many
-cases, the NOFRAME tag is present but provides information that is either
-inappropriate or incomplete. This tag is intended to provide the main links
-existing on the Web site.</p>
+If a NOFRAME tag is present, the information in the tag must be relevant. In many cases, the NOFRAME tag is present but provides information that is either inappropriate or incomplete. This tag is intended to provide the main links existing on the Web site.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page"
-title="Point de contrle 6.5 des WCAG 1.0 ">
-6.5</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0 ">6.5</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 6.5_HTML_02</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-
-Comments:
-See 2.1 in this section.</p>
-2.5:
-Does each frame have a TITLE attribute?</p>
-
-
-In
-HTML, the TITLE attribute is used to describe, in a few words, the purpose of
-the frame. This attribute is complementary to the NAME attribute.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-
-
-12.1</a>
+Comments: See 2.1 in this section.</p>
+2.5: Does each frame have a TITLE attribute?</p>
+In HTML, the TITLE attribute is used to describe, in a few words, the purpose of the frame. This attribute is complementary to the NAME attribute.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 12.1_HTML_01</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): 12.1_HTML_01</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
- See 2.1 in this
-section.</p>
-2.6:
-Is the content of the TITLE attribute relevant?</p>
-Some
-assistive technologies can recognize this attribute. The content of this
-attribute helps the user navigate from frame to frame independently and quickly
-determine the function of each frame.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles"
-title="Point de contrle 12.1 des WCAG 1.0 ">
-12.1</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+Comments: See 2.1 in this section.</p>
+2.6: Is the content of the TITLE attribute relevant?</p>
+Some assistive technologies can recognize this attribute. The content of this attribute helps the user navigate from frame to frame independently and quickly determine the function of each frame.</p> WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles" title="Point de contrle 12.1 des WCAG 1.0 ">12.1</a> WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM
 1.0 Test(s): 12.1_HTML_02</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
-See 2.1 in this section.</p>
-2.7:
-Does each page have a maximum of three frames?</p>
-It
-is important to have no more than three frames on any one page. If more than
-three frames are used, the page becomes difficult to read, especially for users
-of assistive technologies.</p>
+Comments: See 2.1 in this section.</p>
+2.7: Does each page have a maximum of three frames?</p>
+It is important to have no more than three frames on any one page. If more than three frames are used, the page becomes difficult to read, especially for users of assistive technologies.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism"
-title="Point de contrle 13.4 des WCAG 1.0 ">
-13.4</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM
 1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
-See 2.1 in this section.</p>
+Comments: See 2.1 in this section.</p>
 2.8: When frames are used, is scrolling automatic?</p>
 In HTML, a frame can no longer be scaled if scrolling is set to &quot;NO.&quot; The scrolling function must be enabled. For users of magnification software, which might implement user-specific style sheets with larger fonts, and so forth, in-frame scrolling must be enabled to allow all content to be accessed.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style"
-title="Point de contrle 14.3 des WCAG 1.0 ">14.3</a>
-UWEM 1.0 Test(s): -</p>
-Type of criterion: design / development</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">14.3</a>UWEM 1.0 Test(s): -</p>
+Type of criterion: development</p> design / 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments: 
-See 2.1 in this section.</p>
+Comments: See 2.1 in this section.</p>
 3.1.3
  Colors
 </h3>
@@ -527,7 +290,7 @@ WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pa
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 2.1_HTML_01, 2.1_HTML_02, 2.1_HTML_03, 2.1_CSS_01</p>
-Type of criterion: design</p>
+Type of criterion: development</p> design</p>
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments: Template developers and content authors are able to satisfy this criterion. It is their responsibility to ensure that the HTML code they produce does so.</p>
@@ -535,995 +298,304 @@ Content authors must be aware of this criterion so that it is handled appropriat
 3.2:
 Is there enough contrast between colors to be distinguishable by users who have
 impaired color vision?</p>
-Some
-color combinations should be avoided, such as red with blue, yellow with
-violet, yellow with green, as so forth. When there is not enough contrast
-between colors on a page, the information provided by contrast might not be
-accessible to users with poor or impaired color vision.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast"
-title="Point de contrle 2.2 des WCAG 1.0 ">2.2</a>
+Some color combinations should be avoided, such as red with blue, yellow with violet, yellow with green, as so forth. When there is not enough contrast between colors on a page, the information provided by contrast might not be accessible to users with poor or impaired color vision.</p> WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast" title="Point de contrle 2.2 des WCAG 1.0 ">2.2</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 2.2_HTML_01, 2.2_CSS_01</p>
-Type
-of criterion: design</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): 2.2_HTML_01, 2.2_CSS_01</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-Comments:
-See comments for 3.1 in this section. A link can be provided to a high contrast
-version of the Web site. CSS style sheets must be used so that users can automatically
-apply a different style sheet when they read Web site content. This
-configuration can be saved for a Web page by using cookies.
-Additionally,
-content authors and graphics designers must be aware of the difficulties in
-using media where this problem can occur. Graphics designers should consider
-this criterion when they create images. All images in the resource repository
-should comply with this criterion.</p>
-To assess this criterion, a color contrast evaluation tool, such as the <a href="http://www.visionaustralia.org.au/info.aspx?page=628">free downloadable software by Vision Australia</a>, 
-can be used to verify foreground and background color combinations to determine whether the
-color contrast enables proper viewing. The identification of proper color
-visibility is based on the <a href="http://www.w3.org/TR/AERT#color-contrast"
-title="algorithmes du W3C de visibilit des couleurs"> 
-algorithms</a> provided by the W3C.</p>
-3.1.4
- Multimedia</h3>
-4.1:
-Can the information that is conveyed by multimedia be provided another way?</p>
-Whenever
-multimedia is used to provide information, it is important to provide an
-alternative for those who do not have access to multimedia. For example, if a multimedia
-file is made available on a Web site, it is important to provide an accessible
+Comments: See comments for 3.1 in this section. A link can be provided to a high contrast version of the Web site. CSS style sheets must be used so that users can automatically apply a different style sheet when they read Web site content. This configuration can be saved for a Web page by using cookies. Additionally, content authors and graphics designers must be aware of the difficulties in using media where this problem can occur. Graphics designers should consider this criterion when they create images. All images in the resource repository should comply with this criterion.</p>
+To assess this criterion, a color contrast evaluation tool, such as the <a href="http://www.visionaustralia.org.au/info.aspx?page=628">free downloadable software by Vision Australia</a>, can be used to verify foreground and background color combinations to determine whether the color contrast enables proper viewing. The identification of proper color visibility is based on the <a href="http://www.w3.org/TR/AERT#color-contrast" title="algorithmes du W3C de visibilit des couleurs">algorithms</a> provided by the W3C.</p>
+3.1.4 Multimedia</h3>
+4.1: Can the information that is conveyed by multimedia be provided another way?</p>
+Whenever multimedia is used to provide information, it is important to provide an alternative for those who do not have access to multimedia. For example, if a multimedia file is made available on a Web site, it is important to provide an accessible
 text-based alternative in a standard format, such as RTF, TXT, or HTML.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent">1.1</a>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent">1.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.3_external_01, 1.3_external_02, 1.1_HTML_01, 1.1_HTML_02,
+UWEM 1.0 Test(s): 1.3_external_01, 1.3_external_02, 1.1_HTML_01, 1.1_HTML_02,
 1.1_HTML_03, 1.1_HTML_04, 1.1_HTML_05, 1.1_HTML_06, 1.1_HTML_09, 1.1_HTML_10,
 1.1_external_01, 1.1_external_02, 6.3_HTML_01</p>
-Type
-of criterion: design / development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+Type of criterion: design / 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-
 Comments:
-Content authors cannot add or manage multimedia by using the
-standard publishing controls in MCMS 2002.</p>
+Content authors cannot add or manage multimedia by using the standard publishing controls in MCMS 2002.</p>
 4.2:
 Is the Multimedia content synchronized with the alternate support?</p>
-
-
-If a
-video with sound is used on a site, as in the case of an interview between
-several people, it is important to synchronize the alternate support with the
-picture and the sound in the video. The W3C recommends the use of the Synchronized
-Multimedia Integration Language (SMIL) programming language.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents"
-title="Point de contrle 1.4 des WCAG 1.0 ">
-
-
-1.4</a>
-
-
-, <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions">
-
-
-1.3</a>
-
-
-</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 1.4_external_01</p>
-Type
-of criterion: design / development</p>
-Can
-be accomplished by using templates: Yes</p>
+If a video with sound is used on a site, as in the case of an interview between several people, it is important to synchronize the alternate support with the picture and the sound in the video. The W3C recommends the use of the Synchronized Multimedia Integration Language (SMIL) programming language.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents" title="Point de contrle 1.4 des WCAG 1.0 ">1.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions">1.3</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 1.4_external_01</p>
+Type of criterion: design / 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
-This criterion requires the use of a tool, such as <a
-href="http://www.hisoftware.com/hmcc" title=Hi-Caption> 
-Hi-Caption</a> from HiSoftware, which
-is a Synchronized Multimedia Integration Language (SMIL) presentation editor,
-or Microsoft Synchronized Accessible Media Interchange (SAMI). Please refer to
-the technical articles <a
-href="http://msdn.microsoft.com/library/en-us/dnacc/html/atg_samiarticle.asp"
-title="Understanding SAMI 1.0">Understanding SAMI 1.0</a>
-and <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp"
-title="Adding Closed Captions to Digital Media">Adding Closed Captions to Digital Media</a>
-for additional information
-about how to add subtitle tracks to the Windows Media format.</p>
-You might want to
-refer to <a
-href="http://www.hisoftware.com/hmcc/hmmc-paper.htm"
-title="Creating Accessible Multimedia Demos with HiSoftware AccVerify, Hi-Caption, Microsoft PowerPoint and Microsoft Producer">
-
-HiSoftware Hi-Caption Studio - Creating
-Accessible Demos</a>
-as an illustration.
-3.1.5
- Tables
-</h3>
-5.1:
-Is the SUMMARY attribute present and relevant?</p>
-
-
-If
-the SUMMARY attribute is used correctly, it provides additional information to
-disabled users, such as the visually impaired, about the tables in a Web page. If
-a Web page contains menu bars that are created by using an HTML table, setting
-SUMMARY=&quot;Menu bar&quot; provides the user with additional information about
-the table function.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries"
-title="Point de contrle 5.5 des WCAG 1.0 ">
-5.5</a>
-</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
-Can be accomplished by using author content: Yes</p>
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-For
-author content, the HTMLPlaceholder control that is provided
-in the standard release of MCMS 2002 does not enable this functionality. A
-customized control can be developed that inherits from the original HtmlPlaceholder control to provide
-this support.</p>
-The
-best approach is to use a WYSIWYG content editor control instead. <a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2366"
-title="r.a.d.editor Lite Edition">The
-r.a.d.editor Lite Edition</a>, developed by Telerik and available without
-additional cost for all MCMS 2002 clients, makes
-it possible to create and manage rich, accessible HTML content. The content
-generated by r.a.d.editor is accessible if the author fills in all the required
-fields (identified by a special accessibility icon). Any content element that
-is more complex than simple text provides accessibility fields that support a
-complete description.</p>
-It should be noted that this software publisher also
-offers a full range of controls for MCMS 2002. These controls are available in
-the <a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2341"
-title="r.a.d.controls suite MCMS Edition">r.a.d.controls
-suite MCMS Edition</a>.
-This suite offers, in addition to other features, the <a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2357"
-title="r.a.d.editor Premium Edition">r.a.d.editor
-Premium Edition</a>
-control, which is an extended version of the control
-mentioned above.</p>
-5.2:
-In a data table, does the CAPTION tag provide the title of the table?</p>
-Rather
-than using formatted text to provide the title of a table, it is better to use
-the CAPTION tag, which is the tag dedicated to displaying table titles.</p>
+Comments: This criterion requires the use of a tool, such as <a href="http://www.hisoftware.com/hmcc" title=Hi-Caption>Hi-Caption</a> from HiSoftware, which is a Synchronized Multimedia Integration Language (SMIL) presentation editor, or Microsoft Synchronized Accessible Media Interchange (SAMI). Please refer to
+the technical articles <a href="http://msdn.microsoft.com/library/en-us/dnacc/html/atg_samiarticle.asp"
+title="Understanding SAMI 1.0">Understanding SAMI 1.0</a> and <a href="http://msdn.microsoft.com/library/en-us/dnwmt/html/wmp7_sami.asp" title="Adding Closed Captions to Digital Media">Adding Closed Captions to Digital Media</a> for additional information about how to add subtitle tracks to the Windows Media format.</p>
+You might want to refer to <a href="http://www.hisoftware.com/hmcc/hmmc-paper.htm" title="Creating Accessible Multimedia Demos with HiSoftware AccVerify, Hi-Caption, Microsoft PowerPoint and Microsoft Producer">
+HiSoftware Hi-Caption Studio - Creating Accessible Demos</a> as an illustration.
+3.1.5 Tables</h3>
+5.1: Is the SUMMARY attribute present and relevant?</p>
+If the SUMMARY attribute is used correctly, it provides additional information to disabled users, such as the visually impaired, about the tables in a Web page. If a Web page contains menu bars that are created by using an HTML table, setting SUMMARY=&quot;Menu bar&quot; provides the user with additional information about the table function.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries"
-title="Point de contrle 5.5 des WCAG 1.0 ">
-5.5</a>
-
-
-</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries" title="Point de contrle 5.5 des WCAG 1.0 ">5.5</a></p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+For author content, the HTMLPlaceholder control that is provided in the standard release of MCMS 2002 does not enable this functionality. A customized control can be developed that inherits from the original HtmlPlaceholder control to provide this support.</p>
+The best approach is to use a WYSIWYG content editor control instead. <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">The r.a.d.editor Lite Edition</a>, developed by Telerik and available without additional cost for all MCMS 2002 clients, makes it possible to create and manage rich, accessible HTML content. The content generated by r.a.d.editor is accessible if the author fills in all the required fields (identified by a special accessibility icon). Any content element that is more complex than simple text provides accessibility fields that support a complete description.</p>
+It should be noted that this software publisher also offers a full range of controls for MCMS 2002. These controls are available in the <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2341" title="r.a.d.controls suite MCMS Edition">r.a.d.controls suite MCMS Edition</a>. This suite offers, in addition to other features, the <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2357" title="r.a.d.editor Premium Edition">r.a.d.editor Premium Edition</a> control, which is an extended version of the control mentioned above.</p>
+5.2: In a data table, does the CAPTION tag provide the title of the table?</p>
+Rather than using formatted text to provide the title of a table, it is better to use the CAPTION tag, which is the tag dedicated to displaying table titles.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-summaries" title="Point de contrle 5.5 des WCAG 1.0 "> 5.5</a></p>
 UWEM
 1.0 Test(s): 12.3_HTML_07, 12.3_HTML_08, 5.4_HTML_04</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
-Can be accomplished by using author content: Yes</p>
-
-Comments:
-See 5.1 in this section.</p>
-5.3:
-In data tables, are the column headers appropriate?</p>
-
-
-In HTML
-data tables, the TH tag specifies column headers, enabling users of assistive
-technologies to use text-to-voice software to determine that they are column
-headers.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers"
-title="Point de contrle 5.1 des WCAG 1.0 ">
-
-
-5.1</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout"
-title="Point de contrle 5.4 des WCAG 1.0 ">
-
-
-5.4</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 5.1_HTML_01, 5.4_HTML_01, 5.4_HTML_01</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
-Can be accomplished by using author content: Yes</p>
-
-Comments:
-See 5.1 in this section.</p>
-
-5.4:
-In a data table, does a HEADERS attribute link to each of the data cells in the
-table?</p>
-When correctly configured in a data table, the HEADERS and ID attributes make it possible to link each data cell to the appropriate heading cell. This approach enables users that have only a linear view of the table to know which header is linked to the current data cell.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure"
-title="Point de contrle 5.2 des WCAG 1.0 ">
-
-
-5.2</a>
-
-
-</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 5.2_HTML_01, 5.2_HTML_02, 5.4_HTML_03</p>
-Type
-of criterion: development</p>
-
-
+Type of criterion: 
 Can be accomplished by using templates: Yes</p>
-
 Can be accomplished by using author content: Yes</p>
-
-Comments:
-See 5.1 in this section.</p>
-5.5:
-Is the content in formatted tables in correct sequence?</p>
-
-
-In
-formatted tables, the information must be ordered so that it is displayed in an
-equivalent sequence when the information is read in a linear fashion. Care must
-be taken when organizing information in a formatted table. HDL development
-tools that are currently available have a tendency to nest tables within one
-another. The result is that occasionally differences occur between the visual appearance
-of information in a graphical browser and the text equivalent, because the
-latter is based on the structure of the HTML code (as in LYNX-type text
-browsers, for example).</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout"
-title="Point de contrle 5.3 des WCAG 1.0 ">
-
-
-5.3</a>
+Comments: See 5.1 in this section.</p>
+5.3: In data tables, are the column headers appropriate?</p>
+In HTML data tables, the TH tag specifies column headers, enabling users of assistive technologies to use text-to-voice software to determine that they are column headers.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-headers" title="Point de contrle 5.1 des WCAG 1.0 ">5.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout" title="Point de contrle 5.4 des WCAG 1.0 ">5.4</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 5.1_HTML_01, 5.4_HTML_01, 5.4_HTML_01</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: See 5.1 in this section.</p>
+5.4: In a data table, does a HEADERS attribute link to each of the data cells in the table?</p>
+When correctly configured in a data table, the HEADERS and ID attributes make it possible to link each data cell to the appropriate heading cell. This approach enables users that have only a linear view of the table to know which header is linked to the current data cell.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure" title="Point de contrle 5.2 des WCAG 1.0 ">5.2</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 5.3_HTML_01</p>
-Type
-of criterion: design</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+UWEM 1.0 Test(s): 5.2_HTML_01, 5.2_HTML_02, 5.4_HTML_03</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: See 5.1 in this section.</p>
+5.5: Is the content in formatted tables in correct sequence?</p>
+In formatted tables, the information must be ordered so that it is displayed in an equivalent sequence when the information is read in a linear fashion. Care must be taken when organizing information in a formatted table. HDL development tools that are currently available have a tendency to nest tables within one another. The result is that occasionally differences occur between the visual appearance of information in a graphical browser and the text equivalent, because the latter is based on the structure of the HTML code (as in LYNX-type text browsers, for example).</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout" title="Point de contrle 5.3 des WCAG 1.0 ">5.3</a>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 5.3_HTML_01</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: No</p>
 Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
 Content authors must be aware of this criterion, even if they are dependent on the features available in their publishing software.</p>
-3.1.6
- Links</h3>
-6.1:
-Are Link titles no more than 80 characters long?</p>
+3.1.6 Links</h3>
+6.1: Are Link titles no more than 80 characters long?</p>
 Use a maximum of 80 characters in hypertext link titles (accents and spaces count for one character).</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-
-
-13.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: design / development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+UWEM 1.0 Test(s): -</p>
+Type of criterion: design / 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-This
-criterion also applies to content authors when they use the HtmlPlaceHolder control. It is the
-responsibility of Web masters and content authors to ensure that the Web pages
-produced comply with this criterion.</p>
-6.2:
-Are links explicit enough?</p>
-
-
-Links
-must be understandable independent of the page context. Some assistive
-technologies are able to display a list of the available links. These links
-must be understandable without the context of the Web page to enable rapid
-scanning. Avoid links such as &quot;click here.&quot;</p>
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+This criterion also applies to content authors when they use the HtmlPlaceHolder control. It is the responsibility of Web masters and content authors to ensure that the Web pages produced comply with this criterion.</p>
+6.2: Are links explicit enough?</p>
+Links must be understandable independent of the page context. Some assistive technologies are able to display a list of the available links. These links must be understandable without the context of the Web page to enable rapid scanning. Avoid links such as &quot;click here.&quot;</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-13.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.1_HTML_02</p>
-Type
-of criterion: design / development</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): 13.1_HTML_02</p>
+Type of criterion: design / 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-Comments:
-See 6.1 in this section. This criterion is subjective.</p>
-6.3:
-Is the TITLE attribute used, if required, and is it no more than 80 characters
+Comments: See 6.1 in this section. This criterion is subjective.</p>
+6.3: Is the TITLE attribute used, if required, and is it no more than 80 characters
 long?</p>
-In
-HTML, the TITLE attribute is necessary if additional information is required to
-understand a link. For example, if a link is used to download a file, the TITLE
-attribute can provide the file name, file size in bytes, file format, and
-destination (&quot;open in new window&quot;).</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-13.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+In HTML, the TITLE attribute is necessary if additional information is required to understand a link. For example, if a link is used to download a file, the TITLE attribute can provide the file name, file size in bytes, file format, and destination (&quot;open in new window&quot;).</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: See 6.1 in this section.</p>
+6.4: Does the TITLE attribute provide more information about the link than the link title itself?</p>
+The only information that some users have about a link is the title of the link or the content of the TITLE attribute. Therefore, the content of the TITLE attribute should, at the very least, repeat the information contained in the link title. For example, a TITLE attribute that simply indicates &quot;this link opens in a new window&quot; is not adequate, because the user does not know the link destination. However, &quot;Read article on tourism in China (new window)&quot; provides all the essential information required about the link.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.1_HTML_01, 13.1_HTML_02</p>
+Type of criterion: - 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments:
 See 6.1 in this section.</p>
-6.4:
-Does the TITLE attribute provide more information about the link than the link
-title itself?</p>
-
-
-The
-only information that some users have about a link is the title of the link or
-the content of the TITLE attribute. Therefore, the content of the TITLE
-attribute should, at the very least, repeat the information contained in the
-link title. For example, a TITLE attribute that simply indicates &quot;this
-link opens in a new window&quot; is not adequate, because the user does not
-know the link destination. However, &quot;Read article on tourism in China (new
-window)&quot; provides all the essential information required about the link.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-13.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.1_HTML_01, 13.1_HTML_02</p>
-Type
-of criterion: - development</p>
-Can
-be accomplished by using templates: Yes</p>
+6.5: Do all identical link titles lead to the same target?</p>
+Avoid using link titles such as &quot;Read article&quot; multiple times on a page. It is important to use link titles that are not identical to help people who wish to move from link to link to read the page more quickly. It is also important to use short, explicit links with unambiguous destinations.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links" title="Point de contrle 13.1 des WCAG 1.0 ">13.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.1_HTML_01</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
-Comments:
-See 6.1 in this section.</p>
-6.5:
-Do all identical link titles lead to the same target?</p>
-Avoid
-using link titles such as &quot;Read article&quot; multiple times on a page. It
-is important to use link titles that are not identical to help people who wish
-to move from link to link to read the page more quickly. It is also important
-to use short, explicit links with unambiguous destinations.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links"
-title="Point de contrle 13.1 des WCAG 1.0 ">
-13.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.1_HTML_01</p>
-Type
-of criterion: design</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
-Can be accomplished by using author content: Yes</p>
-
-Comments:
-See 6.1 in this section.</p>
-
-<h3 style='page-break-after:auto;mso-list:l18 level3 lfo5'>3.1.7
- Scripts</h3>
-7.1:
-If a script requires alternate text to make it accessible, is the information
-provided by the alternate text equivalent to the information provided by the
-script?</p>
-The
-information about a script should remain available even if the script is
-disabled. For example, if a JavaScript script is used to validate an online
-form, the alternative might be a server-side data entry control. Scripts can be
-disruptive to users of assistive technologies that do not support scripts or
-that support them only in a limited fashion. In addition, some users
-voluntarily disable script execution in standard browsers. For this reason, an
-alternative must be available to retain the information generated by the
-scripts.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/#tech-dynamic-source"
-title="Point de contrle 6.2 des WCAG 1.0 ">
-6.2</a>
-, <a
-href="http://www.w3.org/TR/WCAG10/#tech-scripts"
-title="Point de contrle 6.3 des WCAG 1.0 ">
-6.3</a>
-, <a
-href="http://www.w3.org/TR/WCAG10/#tech-directly-accessible"
-title="Point de contrle 8.1 des WCAG 1.0">
-8.1</a>
+Comments: See 6.1 in this section.</p>
+3.1.7 Scripts</h3>
+7.1: If a script requires alternate text to make it accessible, is the information provided by the alternate text equivalent to the information provided by the script?</p>
+The information about a script should remain available even if the script is disabled. For example, if a JavaScript script is used to validate an online form, the alternative might be a server-side data entry control. Scripts can be disruptive to users of assistive technologies that do not support scripts or that support them only in a limited fashion. In addition, some users voluntarily disable script execution in standard browsers. For this reason, an alternative must be available to retain the information generated by the scripts.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/#tech-dynamic-source" title="Point de contrle 6.2 des WCAG 1.0 ">6.2</a>, <a href="http://www.w3.org/TR/WCAG10/#tech-scripts" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a>, <a href="http://www.w3.org/TR/WCAG10/#tech-directly-accessible" title="Point de contrle 8.1 des WCAG 1.0">8.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_02</p>
-Type
-of criterion: design / development</p>
-Can
-be accomplished by using templates: Yes</p>
+UWEM 1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03, 6.3_HTML_02</p>
+Type of criterion: design / 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-Most
-.NET ASP controls assume that the Web client supports scripts (the
-&quot;postback&quot; concept in ASP.NET). For example, when a user clicks on a
-.NET ASP button that has an associated OnClick event, it causes the browser
-event handler to execute a script function that, in turn, sends the HTML form.</p>
-In
-such cases, .NET ASP controls that require this function should not be used;
-only basic HTML controls and elements should be used. For this reason, data
-must be entered by using query strings, or by submitting the online form
-without scripts, using HTML Submit buttons.</p>
-If
-scripts are used to present content interactively, a text equivalent should be
-provided by placing static text within the elements.</p>
-&lt;object&gt;
-and &lt;applet&gt; tags must also provide alternate text for the element
-content.</p>
-It
-is not possible to use standard MCMS controls in the MCMS 2002 author interface
-to add this information to this type of object. Customized placeholders must be
-developed if these objects are required.</p>
-7.2:
-Can actions be performed even if the peripheral for which they were designed is
-disabled?</p>
-Some
-functions of a Web site, such as those generated by JavaScript scripts, can be
-activated only by a mouse click. However, some users cannot use a mouse to
-browse through a Web site. It must be possible to browse through a Web site by using
-just a keyboard.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts"
-title="Point de contrle 6.4 des WCAG 1.0 ">
-6.4</a>
-, <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable"
-title="Point de contrle 9.2 des WCAG 1.0 ">
-9.2</a>
-, <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events"
-title="Point de contrle 9.3 des WCAG 1.0 ">
-9.3</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 9.2_external_01, 6.3_HTML_02, 6.4_HTML_01, 6.4_HTML_02,
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Most .NET ASP controls assume that the Web client supports scripts (the &quot;postback&quot; concept in ASP.NET). For example, when a user clicks on a .NET ASP button that has an associated OnClick event, it causes the browser event handler to execute a script function that, in turn, sends the HTML form.</p>
+In such cases, .NET ASP controls that require this function should not be used; only basic HTML controls and elements should be used. For this reason, data must be entered by using query strings, or by submitting the online form without scripts, using HTML Submit buttons.</p>
+If scripts are used to present content interactively, a text equivalent should be provided by placing static text within the elements.</p> &lt;object&gt; and &lt;applet&gt; tags must also provide alternate text for the element content.</p>
+It is not possible to use standard MCMS controls in the MCMS 2002 author interface to add this information to this type of object. Customized placeholders must be developed if these objects are required.</p>
+7.2: Can actions be performed even if the peripheral for which they were designed is disabled?</p>
+Some functions of a Web site, such as those generated by JavaScript scripts, can be activated only by a mouse click. However, some users cannot use a mouse to browse through a Web site. It must be possible to browse through a Web site by using just a keyboard.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts"
+title="Point de contrle 6.4 des WCAG 1.0 ">6.4</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable" title="Point de contrle 9.2 des WCAG 1.0 ">9.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events" title="Point de contrle 9.3 des WCAG 1.0 ">9.3</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 9.2_external_01, 6.3_HTML_02, 6.4_HTML_01, 6.4_HTML_02,
 6.4_external_01, 8.1_HTML_01, 8.1_external_01, 9.3_HTML_01</p>
-Type
-of criterion: design / development</p>
+Type of criterion: design / 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments:
-Template developers have full control over the
-HTML used in the
-template. It is possible to create templates that satisfy this criterion. It is
-the responsibility of developers to ensure that the HTML code they produce does
-so.</p>
-Nonspecific event
-handlers such as 
-onFocus=&quot;&quot; or 
-onBlur=&quot;&quot; are preferred to
-event handlers that are triggered by a specific event such as 
-onbeforedeactivate=.</p>
-The
-standard version of the MCMS 2002 author interface does not support this
-function.</p>
-<h3 style='page-break-after:auto;mso-list:l18 level3 lfo5'>3.1.8
- Mandatory
-elements </h3>
-8.1:
-Is the DOCTYPE tag present at the beginning of the page source code?</p>
-International
-WAI guidelines suggest using an appropriate and valid Document Type Definition
-(DTD) to indicate the type of electronic document that the browser must load
-(frame-based, HTML, XML, and so forth). In HTML, the DOCTYPE tag is required to
-define the document type.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar"
-title="Point de contrle 3.2 des WCAG 1.0 ">
-3.2</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 3.2_HTML_01</p>
-Type
-of criterion: development</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Nonspecific event handlers such as  onFocus=&quot;&quot; or onBlur=&quot;&quot; are preferred to event handlers that are triggered by a specific event such as  onbeforedeactivate=.</p>
+The standard version of the MCMS 2002 author interface does not support this function.</p>
+3.1.8 Mandatory elements </h3>
+8.1: Is the DOCTYPE tag present at the beginning of the page source code?</p>
+International WAI guidelines suggest using an appropriate and valid Document Type Definition (DTD) to indicate the type of electronic document that the browser must load (frame-based, HTML, XML, and so forth). In HTML, the DOCTYPE tag is required to define the document type.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar" title="Point de contrle 3.2 des WCAG 1.0 ">3.2</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 3.2_HTML_01</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-
-Comments:
-This criterion does not depend on the author interface
-because it is always defined at the template level.</p>
-
-Template developers
-have full control over the HTML used in the template. It is possible to create
-templates that satisfy this criterion. It is the responsibility of developers
-to ensure that the HTML code they produce does so.</p>
-
-For template
-developers, we recommend using XHTML 1.0 Transitional.</p>
-
-Please note the
-following points:</p>
-
-<p class=ListBullet2 style='mso-list:l6 level1 lfo9'> 
-Symbol;color:black'> 
-Visual Studio 2003 modifies the HTML code when you
-switch from Design view to HTML view. The resulting HTML code that is modified
-by Visual Studio might violate some rules. For example, HTML tags in lowercase
-letters might switch to uppercase (uppercase tags do not comply with XHTML 1.0
-Transitional). Quotation marks in some HTML attributes might be removed. To
-prevent some of these modifications from occurring, disable &quot;
-Apply Automatic Formatting  when switching
-from design to HTML view&quot; in the Visual Studio options. Visual
-Studio 2005, which is supported by MCMS 2002 Service Pack 2, no longer behaves
-in this way.</p>
-
-<p class=ListBullet2 style='mso-list:l6 level1 lfo9'> 
-Symbol;color:black'> 
-In the past, the HtmlPlaceHolder control violated
-several XHTML 1.0 Transitional syntax rules. These problems were corrected in
-Service Pack 1a, as mentioned previously. For additional information, refer to
-article 821969 <a
-href="http://support.microsoft.com/default.aspx?scid=kb;en-us;821969"
-title="MCMS 2002 ActiveX Control Is Not Compliant with HTML 4.01">MCMS 2002 ActiveX Control Is Not Compliant
-with HTML 4.01</a>
-
-
-.
-The WYSIWYG content editor control,  <a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2366"
-title="r.a.d.editor Lite Edition">
-
-
- r.a.d.editor
-Lite Edition</a>from Telerik, presents no problems with syntax
-validation.</p>
-
-<p class=ListBullet2 style='mso-list:l6 level1 lfo9'> 
-Symbol;color:black'> 
-In the past, the HTML code generated by the
-console included a &lt;javascript&gt; tag but not the linked attribute, which does
-not comply with XHTML 1.0. This problem was corrected in Service Pack 1a, as
-mentioned previously. For additional information, please refer to article <a
-href="http://support.microsoft.com/kb/821969/en-us"
-title="MCMS Pages Do Not Comply with HTML 4.01 Standards">
-
-
-821969
-MCMS 2002 ActiveX Control Is Not Compliant with HTML</a>
-
-
-.</p>
-
-<p class=ListBullet2 style='mso-list:l6 level1 lfo9'> 
-Symbol;color:black'> 
-The RoboMetaTag server control is not XHTML 1.0
-compliant. The <a
-href="http://www.gotdotnet.com/community/usersamples/Default.aspx?query=MSIB+Pack">Microsoft Solution for Internet Business
-(MSIB) Plus Pack</a>
-
-
-,
-which can be downloaded from the GotDotNet Web site with the source code,
-offers an excellent replacement <a
-href="http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=AB535681-67B8-4FFD-89E2-6240C3A2BD76"
-title="contrle mtadonnes">
-metadata control </a> that is compliant.</p>
-Lastly, MCMS 2002 Service Pack 2 provides support for ASP.NET 2.0 Master Pages. When you use Master Pages, you can integrate the appropriate DOCTYPE tags throughout the pages of a Web site. The SiteMaster.master includes a DOCTYPE tag. There is an obvious advantage to specifying the DOCTYPE tag in a Master Page: when the tag needs to be modified in the future, it can be modified in a single location to be applied to all the pages on the Web site. See the MSDN article <a href="http://msdn.microsoft.com/library/en-us/dnaspp/html/aspnetusstan.asp" title="Building ASP.NET 2.0 Web Sites Using Web Standards">font-style:normal;mso-bidi-font-style:italic'>Building ASP.NET 2.0 Web Sites Using Web Standards</a>
- for additional
-information.</p>
-8.2:
-Is the LANG attribute present at the beginning of the page source code to
+Comments: This criterion does not depend on the author interface because it is always defined at the template level.</p>
+Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+For template developers, we recommend using XHTML 1.0 Transitional.</p>
+Please note the following points:</p>
+Visual Studio 2003 modifies the HTML code when you switch from Design view to HTML view. The resulting HTML code that is modified by Visual Studio might violate some rules. For example, HTML tags in lowercase letters might switch to uppercase (uppercase tags do not comply with XHTML 1.0 Transitional). Quotation marks in some HTML attributes might be removed. To prevent some of these modifications from occurring, disable &quot; Apply Automatic Formatting  when switching from design to HTML view&quot; in the Visual Studio options. Visual Studio 2005, which is supported by MCMS 2002 Service Pack 2, no longer behaves in this way.</p>
+In the past, the HtmlPlaceHolder control violated several XHTML 1.0 Transitional syntax rules. These problems were corrected in Service Pack 1a, as mentioned previously. For additional information, refer to article 821969 <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;821969" title="MCMS 2002 ActiveX Control Is Not Compliant with HTML 4.01">MCMS 2002 ActiveX Control Is Not Compliant with HTML 4.01</a>
+The WYSIWYG content editor control,  <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">r.a.d.editor Lite Edition</a>from Telerik, presents no problems with syntax validation.</p>
+In the past, the HTML code generated by the console included a &lt;javascript&gt; tag but not the linked attribute, which does not comply with XHTML 1.0. This problem was corrected in Service Pack 1a, as mentioned previously. For additional information, please refer to article <a href="http://support.microsoft.com/kb/821969/en-us" title="MCMS Pages Do Not Comply with HTML 4.01 Standards"> 821969 MCMS 2002 ActiveX Control Is Not Compliant with HTML</a>.</p>
+The RoboMetaTag server control is not XHTML 1.0 compliant. The <a href="http://www.gotdotnet.com/community/usersamples/Default.aspx?query=MSIB+Pack">Microsoft Solution for Internet Business (MSIB) Plus Pack</a>, which can be downloaded from the GotDotNet Web site with the source code, offers an excellent replacement <a href="http://www.gotdotnet.com/Community/UserSamples/Details.aspx?SampleGuid=AB535681-67B8-4FFD-89E2-6240C3A2BD76" title="contrle mtadonnes"> metadata control </a> that is compliant.</p>
+Lastly, MCMS 2002 Service Pack 2 provides support for ASP.NET 2.0 Master Pages. When you use Master Pages, you can integrate the appropriate DOCTYPE tags throughout the pages of a Web site. The SiteMaster.master includes a DOCTYPE tag. There is an obvious advantage to specifying the DOCTYPE tag in a Master Page: when the tag needs to be modified in the future, it can be modified in a single location to be applied to all the pages on the Web site. See the MSDN article <a href="http://msdn.microsoft.com/library/en-us/dnaspp/html/aspnetusstan.asp" title="Building ASP.NET 2.0 Web Sites Using Web Standards">font-style:normal;mso-bidi-font-style:italic'>Building ASP.NET 2.0 Web Sites Using Web Standards</a> for additional information.</p>
+8.2: Is the LANG attribute present at the beginning of the page source code to
 clearly identify the language used?</p>
 It is important to specify the language of a document to enable assistive technologies to adapt content to the language. In HTML, the LANG attribute in the HTML tag specifies the language.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-lang"
-title="Point de contrle 4.3 des WCAG 1.0 ">
-4.3</a>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-lang" title="Point de contrle 4.3 des WCAG 1.0 ">
+4.3</a> UWEM 1.0 Test(s): -</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments:
 -</p>
-8.3:
-Is there a TITLE tag in the page header?</p>
-In
-HTML, the title of a page is coded by including a TITLE tag in the document
-header. Voice browsers list the title of the page first so that
- a user can get positioned on the Web site. The
-title is a constant source of support to those having an attention deficit
-disorder. The tag also makes it easier for search engines to reference the Web
-site.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata"
-title="Point de contrle 13.2 des WCAG 1.0 ">
-
-
-13.2</a>
-
-
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.2_HTML_01</p>
-Type
-of criterion: development (development rules)</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+8.3: Is there a TITLE tag in the page header?</p>
+In HTML, the title of a page is coded by including a TITLE tag in the document header. Voice browsers list the title of the page first so that a user can get positioned on the Web site. The title is a constant source of support to those having an attention deficit disorder. The tag also makes it easier for search engines to reference the Web site.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">13.2</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.2_HTML_01</p>
+Type of criterion: development (development rules)</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-
 Comments:
 -</p>
-8.4:
-Is the content of the TITLE tag explicit?</p>
-
-
-The
-TITLE tag provides the title of the page that was just loaded. It is important
-to provide an explicit title to help users get oriented during browsing.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata"
-title="Point de contrle 13.2 des WCAG 1.0 ">
-
-
-13.2</a>
-
-
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 13.2_HTML_01</p>
-Type
-of criterion: design</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
+8.4: Is the content of the TITLE tag explicit?</p>
+The TITLE tag provides the title of the page that was just loaded. It is important to provide an explicit title to help users get oriented during browsing.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">13.2</a>
+</p> 
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 13.2_HTML_01</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
-
 Comments:
 -</p>
-8.5:
-Is the content of the TITLE tag different from one page to the next?</p>
-
-
-Using
-an identical title on every page of a Web site can be confusing to users. The
-title of the page is the first information that appears on the screen. Assigning
-the same title to multiple documents is misleading.</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 1]: -</p>
-
-WCAG
-1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata"
-title="Point de contrle 13.2 des WCAG 1.0 ">
-13.2</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): -</p>
-Type
-of criterion: design</p>
-Can
-be accomplished by using templates: Yes</p>
+8.5: Is the content of the TITLE tag different from one page to the next?</p>
+Using an identical title on every page of a Web site can be confusing to users. The title of the page is the first information that appears on the screen. Assigning the same title to multiple documents is misleading.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata" title="Point de contrle 13.2 des WCAG 1.0 ">13.2</a></p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): -</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: -</p>
-8.6:
-Are language changes on a page indicated?</p>
-Whenever
-a language change occurs on a page, it should be indicated to the user. If
-text-to-voice software is used, a change in language causes the software
-detection language to change as specified by the LANG tag.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-changes"
-title="Point de contrle 4.1 des WCAG 1.0 ">
-4.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 4.1_HTML_01, 4.1_HTML_02, 4.1_HTML_03, 4.1_HTML_04, 4.1_CSS_01,
-4.1_CSS_02</p>
-Type
-of criterion: development</p>
-Can
-be accomplished by using templates: Yes</p>
-Can be accomplished by using author content: Yes</p>
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-The HtmlPlaceholder control provided in
-the standard version of MCMS 2002 does not support the use of LANG attributes
-in the middle of content in the placeholder. To do this, the author would need
-to understand the HTML language so that he or she could edit the HTML code for
-the control to add these attributes. A customized control can be developed to
-support this feature.</p>
-The
-WYSIWYG content editor control,<a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2366"
-title="r.a.d.editor Lite Edition">
-
-
- r.a.d.editor
-Lite Edition</a>from Telerik, supports the specification of
-language for all content elements.</p>
-3.1.9
- Information structuring </h3>
-9.1:
-Is information structured consistently for the general context of the site?</p> The structure of information on a page depends on the type of site (news, gaming, scientific, artistic, and so forth). In addition, the individual elements that provide
-information on the page (such as images and titles) might not be a problem in and of themselves, but the arrangement of these elements in relation to one another might not be consistent. For example, on a news site, no text should be displayed before the title.</p>
-WCAG
-1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward"
-title="Point de contrle 14.1 des WCAG 1.0 ">
-14.1</a>
-</p>
-WCAG
-1.0 checkpoint(s) [Priority 2]: -</p>
-WCAG
-1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM
-1.0 Test(s): 12.3_HTML_10, 12.3_HTML_15, 14.1_HTML_01</p>
-Type
-of criterion: design</p>
-Can
-be accomplished by using templates: Yes</p>
-Can be accomplished by using author content: Yes</p>
-Comments:
-It is possible to create templates that satisfy this criterion.</p>
-Template developers have full control over the (X)HTML used in the template. It is the responsibility of developers to ensure that all (X)HTML code satisfies this criterion.</p>
-Similarly,
-content authors should keep this criterion in mind.</p>
-9.2:
-Is the Web page presented in a consistent fashion?</p>
-Use
-of styles that are available in HTML, for example H1 and H2, can provide structure to a Web page. Such tags are extremely important for structuring a Web page. For example, the H1 tag indicates a title and the H2 tag indicates subheadings. These tags must be used for their intended purpose, that is, to provide structure, and not for their graphic capabilities. Additionally, blocks of information should be separated from each other.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings"
-title="Point de contrle 3.5 des WCAG 1.0 ">
-
-
-3.5</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-front-loading"
-title="Point de contrle 13.8 des WCAG 1.0 ">
-
-
-13.8</a>
-
-
-</p>
-UWEM
-1.0 Test(s): 3.5_HTML_01, 3.5_HTML_02, 3.5_HTML_03, 3.5_HTML_04, 3.5_HTML_05</p>
-Type
-of criterion: design</p>
-
-
-Can
-be accomplished by using templates: Yes</p>
-
-
-Can be accomplished by using author content: Yes</p>
-
-Comments:
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-Content
-authors must be aware of these issues. They can use the HtmlPlaceholder control for content
-editing and headers.</p>
-Nevertheless,
-the standard  
-
-
- 
-HtmlPlaceholder control does not support the creation of &lt;hr/&gt;
-elements unless the HTML code of the control is directly edited. The WYSIWYG
-content editor control,<a
-href="http://www.mcmscontrols.com/Default.aspx?PageId=2366"
-title="r.a.d.editor Lite Edition">
-
-
- r.a.d.editor
-Lite Edition</a>from Telerik, can be used instead.</p>
-
-<h3 style='page-break-after:auto;mso-list:l18 level3 lfo5'>
-
-
-<a
-name="_Ref122784533"> style='mso-fareast-font-family:
-Arial'> style='mso-list:Ignore'>3.1.10 
-Information layout </a></h3>
-
-10.1: Is page content separated from content
-introduction?</p>If a page is coded in HTML, it should not
-contain layout information (for example, BGCOLOR, FONT, ALIGN, B, I), because
-all this information can be included in a style sheet.</p>
-
-
-WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-
-
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets"
-title="Point de contrle 3.3 des WCAG 1.0 ">
-
-
-3.3</a>
-
+8.6: Are language changes on a page indicated?</p>
+Whenever a language change occurs on a page, it should be indicated to the user. If text-to-voice software is used, a change in language causes the software detection language to change as specified by the LANG tag.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-changes" title="Point de contrle 4.1 des WCAG 1.0 "> 4.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-
+UWEM 1.0 Test(s): 4.1_HTML_01, 4.1_HTML_02, 4.1_HTML_03, 4.1_HTML_04, 4.1_CSS_01, 4.1_CSS_02</p>
+Type of criterion: 
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+The HtmlPlaceholder control provided in the standard version of MCMS 2002 does not support the use of LANG attributes in the middle of content in the placeholder. To do this, the author would need to understand the HTML language so that he or she could edit the HTML code for the control to add these attributes. A customized control can be developed to support this feature.</p>
+The WYSIWYG content editor control,<a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">r.a.d.editor Lite Edition</a>from Telerik, supports the specification of language for all content elements.</p>
+3.1.9 Information structuring </h3>
+9.1: Is information structured consistently for the general context of the site?</p> The structure of information on a page depends on the type of site (news, gaming, scientific, artistic, and so forth). In addition, the individual elements that provide information on the page (such as images and titles) might not be a problem in and of themselves, but the arrangement of these elements in relation to one another might not be consistent. For example, on a news site, no text should be displayed before the title.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward" title="Point de contrle 14.1 des WCAG 1.0 ">14.1</a></p>
+WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 12.3_HTML_10, 12.3_HTML_15, 14.1_HTML_01</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: It is possible to create templates that satisfy this criterion.</p>
+Template developers have full control over the (X)HTML used in the template. It is the responsibility of developers to ensure that all (X)HTML code satisfies this criterion.</p>
+Similarly, content authors should keep this criterion in mind.</p>
+9.2: Is the Web page presented in a consistent fashion?</p>
+Use of styles that are available in HTML, for example H1 and H2, can provide structure to a Web page. Such tags are extremely important for structuring a Web page. For example, the H1 tag indicates a title and the H2 tag indicates subheadings. These tags must be used for their intended purpose, that is, to provide structure, and not for their graphic capabilities. Additionally, blocks of information should be separated from each other.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-logical-headings" title="Point de contrle 3.5 des WCAG 1.0 ">3.5</a>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-front-loading" title="Point de contrle 13.8 des WCAG 1.0 ">13.8</a></p>
+UWEM 1.0 Test(s): 3.5_HTML_01, 3.5_HTML_02, 3.5_HTML_03, 3.5_HTML_04, 3.5_HTML_05</p>
+Type of criterion: design</p>
+Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: Yes</p>
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Content authors must be aware of these issues. They can use the HtmlPlaceholder control for content editing and headers.</p>
+Nevertheless, the standard  HtmlPlaceholder control does not support the creation of &lt;hr/&gt; elements unless the HTML code of the control is directly edited. The WYSIWYG content editor control,<a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">r.a.d.editor Lite Edition</a>from Telerik, can be used instead.</p>
+3.1.10 
+Information layout </a></h3>
+10.1: Is page content separated from content introduction?</p>If a page is coded in HTML, it should not contain layout information (for example, BGCOLOR, FONT, ALIGN, B, I), because all this information can be included in a style sheet.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets" title="Point de contrle 3.3 des WCAG 1.0 ">3.3</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 3.3_HTML_01, 3.3_HTML_02</p>
-
-Type of criterion: development (development
-rules)</p>Can be accomplished by using templates: Yes</p>
-
-
-Can
-be accomplished by using author content: N/A</p>
-
-
+Type of criterion: development</p> development (development rules)</p>Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: N/A</p>
 Comments: 
 Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
-Content authors do not have the same degree of control: author content cannot be positioned by using style sheets with the standard 
-HtmlPlaceholder control. The WYSIWYG content editor control, <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">
-r.a.d.editor Lite Edition</a>
- from Telerik, can be used instead.</p>
+Content authors do not have the same degree of control: author content cannot be positioned by using style sheets with the standard  HtmlPlaceholder control. The WYSIWYG content editor control, <a href="http://www.mcmscontrols.com/Default.aspx?PageId=2366" title="r.a.d.editor Lite Edition">r.a.d.editor Lite Edition</a> from Telerik, can be used instead.</p>
 10.2: If style sheets are disabled, is the information still accessible?</p>
 To separate content from layout on an HTML page, use style sheets (CSS) to specify the layout. However, people who do not wish to read the page by using the author-selected style sheet should obtain the same information when they disable the page style sheet and use their own customized settings instead.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-order-style-sheets" title="Point de contrle 6.1 des WCAG 1.0 ">
 6.1</a>
-
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM 1.0 Test(s): 4.1_CSS_02, 6.1_HTML_01,
-6.1_HTML_02</p>
-Type of criterion: design / development</p>
+UWEM 1.0 Test(s): 4.1_CSS_02, 6.1_HTML_01, 6.1_HTML_02</p>
+Type of criterion: development</p> design / 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: See 10.1 in this section.</p>
@@ -1534,7 +606,7 @@ WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pa
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-tab-order" title="Point de contrle 9.4 des WCAG 1.0 ">9.4</a>
 UWEM 1.0 Test(s): 3.6_HTML_01, 6.1_HTML_01,6.1_HTML_02</p>
-Type of criterion: design / development</p>
+Type of criterion: development</p> design / 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: See 10.1 in this section.</p>
@@ -1546,7 +618,7 @@ WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-unassociated-labels" title="Point de contrle 10.2 des WCAG 1.0 ">10.2</a>, <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-associate-labels" title="Point de contrle 12.4 des WCAG 1.0 ">12.4</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 10.2_HTML_01, 12.4_HTML_01, 12.4_HTML_02</p>
-Type of criterion: development</p>
+Type of criterion: development</p> 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
@@ -1557,33 +629,15 @@ WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pa
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 1.1_HTML_02, 1.1_HTML_03</p>
-Type of criterion: development</p>Can be accomplished by using templates: Yes</p>
+Type of criterion: development</p> Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: 
 See 11.1 in this section.</p>
-11.3: Is the data entry control in online
-forms accessible?</p>If an online form is validated by using a
-script on the client, for example, provide an alternative to the script so that
-the user, using any type of browser, can submit the information from the form
-to the server. Additionally, if an HTML data entry control is used, mandatory
-data entry fields should be specified explicitly (for example, mandatory fields
-are preceded by an asterisk). Developers should not use colors to indicate
-mandatory fields or specify the mandatory fields only at the bottom of the
-page.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts"
-title="Point de contrle 6.3 des WCAG 1.0 ">
-
-
-6.3</a>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page"
-title="Point de contrle 6.5 des WCAG 1.0 ">
-6.5</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+11.3: Is the data entry control in online forms accessible?</p>If an online form is validated by using a script on the client, for example, provide an alternative to the script so that the user, using any type of browser, can submit the information from the form to the server. Additionally, if an HTML data entry control is used, mandatory data entry fields should be specified explicitly (for example, mandatory fields are preceded by an asterisk). Developers should not use colors to indicate mandatory fields or specify the mandatory fields only at the bottom of the page.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts" title="Point de contrle 6.3 des WCAG 1.0 ">6.3</a> WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page" title="Point de contrle 6.5 des WCAG 1.0">6.5</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 6.2_HTML_02, 6.2_HTML_03,
 6.3_HTML_01, 6.3_HTML_02, 6.5_HTML_03</p>
-Type of criterion: development</p>Can be accomplished by using templates: Yes</p>
+Type of criterion: development</p> Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: 
 Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
@@ -1594,213 +648,107 @@ In such cases, .NET ASP controls that require this function should not be used; 
 Browsing aids</h3>
 12.1: Is the main navigation menu on the Web site located in the same place on all pages?</p>When users browse through a site, they find it easier to locate a menu or navigation toolbar if it is always in the same place on all pages of the Web site. If browsing mechanisms differ from one page to the next, it creates difficulties for users and might cause them to abandon the Web site.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism"
-title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style"
-title="Point de contrle 14.3 des WCAG 1.0 ">
-14.3</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a>
+WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-consistent-style" title="Point de contrle 14.3 des WCAG 1.0 ">14.3</a>
 UWEM 1.0 Test(s): 13.4_HTML_01</p>
-Type of criterion: design</p>Can be accomplished by using templates: Yes</p>
+Type of criterion: development</p> design</p>Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: 
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-Using the MCMS 2002 API to create browsing
-controls makes it possible to provide more consistency throughout a Web site.</p>
-Content authors have no control over this
-feature.</p>
-12.2: If keyboard shortcuts are defined for
-the site, are they active on the page?</p>If keyboard shortcuts are set up for a page,
-these shortcuts should be activated and homogeneous throughout the pages of the
-Web site.</p>
+Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Using the MCMS 2002 API to create browsing controls makes it possible to provide more consistency throughout a Web site.</p>
+Content authors have no control over this feature.</p>
+12.2: If keyboard shortcuts are defined for the site, are they active on the page?</p>
+If keyboard shortcuts are set up for a page, these shortcuts should be activated and homogeneous throughout the pages of the Web site.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism"
-title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism" title="Point de contrle 13.4 des WCAG 1.0 ">13.4</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 13.4_HTML_01</p>
-
-Type of criterion: design / development</p>Can be accomplished by using templates: Yes</p>
-
-
-Can
-be accomplished by using author content: N/A</p>
-
-
-Comments: 
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-
-Content authors
-cannot create or manipulate tab indexes by using standard content
-editing controls (placeholders). If a content author creates hyperlinks in the
-Web content, the hyperlinks should be displayed sequentially as a user chooses
-the Tab button to move from one link to the next.</p>
-
-Accepted
-practice is to create separate blocks in the template and provide tab index
-values within each block by assigning a unique tab index range to each, that
-is, 100-200, 200-300, and so forth. This approach enables consistent and
-orderly browsing. In this way, the user can browse through all the available
-content.</p>
-3.1.13 
-Accessible content </h3>
-
+Type of criterion: development</p> design / Can be accomplished by using templates: Yes</p>
+Can be accomplished by using author content: N/A</p>
+Comments:  Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Content authors cannot create or manipulate tab indexes by using standard content editing controls (placeholders). If a content author creates hyperlinks in the Web content, the hyperlinks should be displayed sequentially as a user chooses the Tab button to move from one link to the next.</p>
+Accepted practice is to create separate blocks in the template and provide tab index values within each block by assigning a unique tab index range to each, that is, 100-200, 200-300, and so forth. This approach enables consistent and orderly browsing. In this way, the user can browse through all the available content.</p>
+3.1.13  Accessible content </h3>
 13.1: Can the user control screen refresh?</p>
-
-When screen content is automatically
-refreshed, the cursor in screen readers (such as JAWS) is automatically reset
+When screen content is automatically refreshed, the cursor in screen readers (such as JAWS) is automatically reset
 to the top of the page, making it difficult for the user to read the entire page.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh"
-title="Point de contrle 7.4 des WCAG 1.0 ">
-
-
-7.4</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-
-UWEM 1.0 Test(s): 7.4_HTML_01, 7.4_HTML_02,
-7.4_external_01</p>
-Type of criterion: development</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: -</p> 
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh" title="Point de contrle 7.4 des WCAG 1.0 ">7.4</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 7.4_HTML_01, 7.4_HTML_02, 7.4_external_01</p>
+Type of criterion: development</p> 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: N/A</p>
 Comments: 
-Template developers have full control over the HTML used in
-the template. It is possible to create templates that satisfy this criterion.
-It is the responsibility of developers to ensure that the HTML code they
-produce does so.</p>
-
+Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
 Content authors have no control over these features.</p>
-
-13.2: If the user is automatically
-redirected, is it without using a script?</p>It is best to use automatic redirection
-solutions from the server side. In this way, redirection does not depend on the
-client workstation.</p>
+13.2: If the user is automatically redirected, is it without using a script?</p>It is best to use automatic redirection solutions from the server side. In this way, redirection does not depend on the client workstation.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward"
-title="Point de contrle 7.5 des WCAG 1.0 ">
-7.5</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM 1.0 Test(s): 7.5_HTML_01, 7.5_HTML_02,
-7.5_external_01</p>
-Type of criterion: Design / development
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward" title="Point de contrle 7.5 des WCAG 1.0 ">7.5</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 7.5_HTML_01, 7.5_HTML_02, 7.5_external_01</p>
+Type of criterion: development</p> Design / development
 (development rules)</p>
 Can be accomplished by using templates: Yes</p>
-Can
-be accomplished by using author content: N/A</p>
+Can be accomplished by using author content: N/A</p>
 Comments: 
-13.3: Is a Web site visitor alerted when new
-windows appear?</p>
-The term &quot;new windows&quot; can refer
-to two types of windows: new browser windows or pop-up windows. New browser
-windows are opened by using an HTML command, whereas pop-up windows are opened by
-using a script on the client side. In some cases, people who use browsers that
-do not support scripting on the client side or who voluntarily disable scripts
-in their browser do not have access to the information contained in pop-up
-windows. If a pop-up window opens automatically whenever a page is loaded, it
-makes the site difficult to read, especially for people who use assistive
-technologies for browsing. It is not recommended that new windows be opened,
-especially if the user is not notified.</p>
+13.3: Is a Web site visitor alerted when new windows appear?</p>
+The term &quot;new windows&quot; can refer to two types of windows: new browser windows or pop-up windows. New browser windows are opened by using an HTML command, whereas pop-up windows are opened by using a script on the client side. In some cases, people who use browsers that do not support scripting on the client side or who voluntarily disable scripts
+in their browser do not have access to the information contained in pop-up windows. If a pop-up window opens automatically whenever a page is loaded, it makes the site difficult to read, especially for people who use assistive technologies for browsing. It is not recommended that new windows be opened, especially if the user is not notified.</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups"
-title="Point de contrle 10.1 des WCAG 1.0 ">
-10.1</a>
-WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
-UWEM 1.0 Test(s): 10.1_HTML_01,
-10.1_HTML_02, 10.1_HTML_03</p>
-Type of criterion: design</p>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">10.1</a> WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
+UWEM 1.0 Test(s): 10.1_HTML_01, 10.1_HTML_02, 10.1_HTML_03</p>
+Type of criterion: development</p> design</p>
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: No</p>
-Comments:
-Template developers have full control over the
-HTML used in the template. It is possible to create templates that satisfy this
-criterion. It is the responsibility of developers to ensure that the HTML code
-they produce does so. .</p>
-Content authors can
-create hyperlinks for images by using the 
- ImagePlaceholder
-control. This control can be used to specify whether the link is opened in a
+Comments: Template developers have full control over the HTML used in the template. It is possible to create templates that satisfy this criterion. It is the responsibility of developers to ensure that the HTML code they produce does so.</p>
+Content authors can create hyperlinks for images by using the ImagePlaceholder control. This control can be used to specify whether the link is opened in a
 new window. If so, the user is not notified.</p>
-ne possible workaround is to prohibit, at
-the design rule level, the creation of image hyperlinks that open new windows.</p>
-13.4: Is there an alternative to scripts for
-opening new windows?</p>If no alternative to pop-ups is provided,
-some users cannot access pop-ups (for example, users whose browsers do not
-support scripting or who voluntarily disable scripting in their browser).</p>
+ne possible workaround is to prohibit, at the design rule level, the creation of image hyperlinks that open new windows.</p>
+13.4: Is there an alternative to scripts for opening new windows?</p>
+If no alternative to pop-ups is provided, some users cannot access pop-ups (for example, users whose browsers do not support scripting or who voluntarily disable scripting in their browser).</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
-WCAG 1.0 checkpoint(s) [Priority 2]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups"
-title="Point de contrle 10.1 des WCAG 1.0 ">
-10.1</a>
+WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups" title="Point de contrle 10.1 des WCAG 1.0 ">10.1</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 6.2_HTML_03, 6.3_HTML_02</p>
-Type of criterion: design / development</p>
+Type of criterion: development</p> design / 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: No</p>
 Comments: See 13.3 in this section.</p>
-13.5: Is additional information available to
-describe files that can be downloaded from the Web site?</p>
+13.5: Is additional information available to describe files that can be downloaded from the Web site?</p>
 When a user downloads files, the following information should be provided: file format, file size, link to a conversion utility if required, link to software needed to read the file format if required, and e-mail address for requesting a file in an alternate format. Files that are available for download on the Web site are not always in an accessible format. Therefore, it is important to provide the necessary means to access the downloadable files. If a file is in PDF format, for example, the user should be provided with the opportunity to download Acrobat Reader software (or a URL for an online conversion utility).</p>
 WCAG 1.0 checkpoint(s) [Priority 1]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 2]: -</p>
 WCAG 1.0 checkpoint(s) [Priority 3]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-content-preferences" title="Point de contrle 11.3 des WCAG 1.0 ">11.3</a>
 UWEM 1.0 Test(s): -</p>
-Type of criterion: development</p>
+Type of criterion: development</p> 
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments: -</p>
 13.6: Does the specific presentation or
 layout of information interfere with the ability to access its content?</p>
-Care must be taken to ensure that specific
-layout or presentation elements (blinking text, scrolling text, and so forth)
-do not interfere with the user's ability to access the information: for
-example, fast blinking text (difficult for most users to read and even more
-difficult for people with visual disabilities) or fast scrolling information
-(difficult for people with visual disabilities or for people who have reading
-difficulties). If this type of presentation or layout is generated by an
-applet, a FLASH animation, or a GIF file, an alternative should be made
-available.</p>
-WCAG 1.0 checkpoint(s) [Priority 1]: <a
-href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker" title="Point de contrle 7.1 des WCAG 1.0 ">7.1</a>
+Care must be taken to ensure that specific layout or presentation elements (blinking text, scrolling text, and so forth) do not interfere with the user's ability to access the information: for example, fast blinking text (difficult for most users to read and even more difficult for people with visual disabilities) or fast scrolling information (difficult for people with visual disabilities or for people who have reading difficulties). If this type of presentation or layout is generated by an applet, a FLASH animation, or a GIF file, an alternative should be made available.</p>
+WCAG 1.0 checkpoint(s) [Priority 1]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker" title="Point de contrle 7.1 des WCAG 1.0 ">7.1</a>
 WCAG 1.0 checkpoint(s) [Priority 2]: <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking" title="Point de contrle 7.2 des WCAG 1.0 ">7.2</a> , <a href="http://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement" title="Point de contrle 7.3 des WCAG 1.0 ">7.3</a>
 WCAG 1.0 checkpoint(s) [Priority 3]: -</p>
 UWEM 1.0 Test(s): 7.1_HTML_01, 7.1_HTML_02, 7.1_HTML_03, 7.1_CSS_01, 7.1_external_01, 7.1_external_02 , 7.3_HTML_01, 7.3_HTML_02, 7.3_external_01, 7.3_external_02</p>
-Type of criterion: design</p>
+Type of criterion: development</p> design</p>
 Can be accomplished by using templates: Yes</p>
 Can be accomplished by using author content: Yes</p>
 Comments:
 3.1.14
  Summary</a></h3>
 As can be seen by the preceding discussion, MCMS 2002 supports WCAG 1.0 checkpoints in all three priority levels and can be used to create Web sites that are accessible to people with a wide variety of disabilities.</p>
-This said, throughout the lifecycle of a MCMS 2002 project, the design considerations
-identified in section 
+This said, throughout the lifecycle of a MCMS 2002 project, the design considerations identified in section 
 2.1
  Design checklist for accessible Web content as well as the ones described in section 2.2
-Coding checklist for accessible Web content
- should be observed.</p>
+Coding checklist for accessible Web content should be observed.</p>
 3.2
-Assessment
-and validation of a MCMS 2002 Web site</a>
-for WCAG 1.0 checkpoints</h2>
+Assessment and validation of a MCMS 2002 Web site</a> for WCAG 1.0 checkpoints</h2>
 The information provided under section
 2.3
 Assessment and validation of accessible Web Content also applies in for MCMS 2002-based Web sites.</p>
 In addition to the tools mentioned earlier in this document, third-party solutions that enhance the functionality of MCMS 2002 are available. This section discusses some of these solutions, which are also described in the article <a
 href="http://www.microsoft.com/cmserver/partners/tool.mspx" title="Content Management Server: Tool and Technology Partners">
 Content Management Server: Tool and Technology Partners</a>.</p>
-HiSoftware provides a complete Web site quality, accessibility, testing, and remediation suite that works with MCMS 2002 and the
-Visual  
-Studio 2005 Enterprise (Developer or Architect versions) development environment.</p>
+HiSoftware provides a complete Web site quality, accessibility, testing, and remediation suite that works with MCMS 2002 and the Visual   Studio 2005 Enterprise (Developer or Architect versions) development environment.</p>
 <a href="http://www.hisoftware.com/access/newvIndex.html" title="AccVerify DS2">AccVerify 10</a> provides comprehensive content verification and can identify errors and compliance issues with standards. In addition, the program produces a checklist of criteria for subsequent manual verification.</p>
 The <a href="http://www.hisoftware.com/access/intcmsacc.html" title="AccVerify Integration Pack for Microsoft Content Management Server">AccVerify Integration Pack for Microsoft Content Management Server</a> checks Web files in MCMS 2002 channels for compliance with accessibility standards. A few of the features available through the joint use of MCMS 2002 and AccVerify (with integration pack) are as follows:</p>
 Effective and consistent management of content accessibility throughout all stages of content development and deployment</p>
